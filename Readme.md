@@ -8,7 +8,7 @@ This project is for the creation of a website for UW Roundnet, a university spor
 
 
 ## GitHub Repository
-[Link to our project repo](UW-Roundnet-Website/Readme.md)
+[Link to our project repo](Readme.md)
 
 
 ------------------------------------------------
