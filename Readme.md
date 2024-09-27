@@ -84,7 +84,7 @@ This project is for the creation of a website for UW Roundnet, a university spor
 
 ## Project Prototype
 We have created interactive prototypes for the website using Justinmind. You can view the prototype by [clicking here](https://cloud.justinmind.com/usernote/prototype/e500a8d55122c1afa6324bf97956c677cf59c9bacd1d98fce1fa10a35f9b58d4).
-
+Please see the files section for our HTML, CSS, and JS prototype.
 
 -------------------------------------------------
 
