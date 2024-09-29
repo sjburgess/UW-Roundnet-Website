@@ -101,9 +101,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems? No questions or issues yet.*
 
 - **Mitchell:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday? I started working on the JustinMind project prototype.
+  - *What are you planning to do today? I am planning to finish up the prototype within the coming days.
+  - *Any problems? I have had no issues so far.
 
 - **Lucas:**
   - *What did you do yesterday?* 
@@ -134,9 +134,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* No issues.*
 
 - **Mitchell:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday? I completed the prototype in Justinmind and sent it to Basil for edits.
+  - *What are you planning to do today? I am planning on assisting Basil in coding the prototype.   
+  - *Any problems? No issues so far.
 
 - **Lucas:**
   - *What did you do yesterday?* 
@@ -167,9 +167,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems? No issues.*
 
 - **Mitchell:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday? I was away for the weekend so I did not get a chance to complete any work for the project.
+  - *What are you planning to do today? I am planning on reviewing the entire sprint 1 submission and making sure we have submitted all of the necessary files.
+  - *Any problems? No issues so far.
 
 - **Lucas:**
   - *What did you do yesterday?* 
