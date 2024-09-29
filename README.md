@@ -183,8 +183,6 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* 
 
 
-**** Insert text SS *****
-
 -------------------------------------------------------------
 ## Sprint Review
 1. We learned how to break down tasks and collaborate effectively using Trello. We also learned more about how to effectively use the burndown chart powerup. 
