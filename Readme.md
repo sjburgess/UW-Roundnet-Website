@@ -90,9 +90,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
 
 ### Day 2: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday?* Yesterday, I gathered initial user stories based on our teams discussions and created a list of what our client wants to see in the site. 
+  - *What are you planning to do today?*  Today, I started breaking down the user stories into tasks, once I have a better view of the prototype I will realign the tasks.
+  - *Any problems?* No issues so far! 
 
 - **Sarah:**
   - *What did you do yesterday?* 
@@ -123,9 +123,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
 
 ### Day 5: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday?* Yesterday I finished working on user sotry taks with Sarah -- We created tasks that align with the scope and result the client is looking for. 
+  - *What are you planning to do today?* Today, I created and formatted the readme file in github, added collaboraters and set up the struture for submission of sprint 1.
+  - *Any problems?* The chart formatting is wonky and needs further attention to ensure it's formatted correctly moving forward. 
 
 - **Sarah:**
   - *What did you do yesterday?* 
@@ -156,9 +156,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
 
 ### Day 7: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday?* Yesterday, I continued to format our readme submission file and reached out to another team for sprint review. 
+  - *What are you planning to do today?* Today I plan to fix the burndown chart formatting and finalze the readme for submission. 
+  - *Any problems?* no issues! 
 
 - **Sarah:**
   - *What did you do yesterday?* 
@@ -195,4 +195,3 @@ Please see the files section for our HTML, CSS, and JS prototype.
 5. Yes, we are satisfied with what we completed for Sprint 1.
 6. Group XYZ was invited to review. All members were present and provided feedback on our design.
 
-Fortnite
