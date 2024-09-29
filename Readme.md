@@ -102,9 +102,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* 
 
 - **Basil:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday? I completed market analysis research to observe functionality and graphical integrity of websites for similar organizations. I took note of aspects to retain in Badger Roundnet's website.* 
+  - *What are you planning to do today? I plan to make edits to the prototype in Justinmind.* 
+  - *Any problems? No problems today.* 
 
 - **Ian:**
   - *What did you do yesterday?* 
@@ -135,8 +135,8 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* 
 
 - **Basil:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
+  - *What did you do yesterday? I completed edits in Justinmind and created a homepage titlescreen graphic to be used on each page of the website.* 
+  - *What are you planning to do today? I plan to create HTML, CSS, and JS files to code website functionalities for the entire project. I also plan to begin coding the prototype homepage in HTML.* 
   - *Any problems?* 
 
 - **Ian:**
@@ -168,8 +168,8 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* 
 
 - **Basil:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
+  - *What did you do yesterday? I continued writing HTML for the homepage of the prototype Badger Roundnet site.* 
+  - *What are you planning to do today? I plan to complete writing the HTML for the homepage of the prototype Badger Roundnet site and make edits to ensure it matches the approved prototype in Justinmind. I also plan to add the HTML to the github site.* 
   - *Any problems?* 
 
 - **Ian:**
