@@ -115,9 +115,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+ - *What did you do yesterday?* Familiarized myself with the client and began brainstorming user stories.
+ - *What are you planning to do today?* Assist in breaking down user stories into tasks and plan what implementation would look like.
+ - *Any problems?* No issues yet.
 
 ---
 
@@ -148,10 +148,10 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems? No issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
-
+  - *What did you do yesterday?* Record our user stories on a table and assign priority, complexity, and lead team member to each task.
+  - *What are you planning to do today?* I'm going to meet with the client to ask them some logistical questions about how their club operates.
+  - *Any problems?* Nope!
+ 
 ---
 
 ### Day 7: Daily Scrum Meeting
@@ -181,10 +181,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems? No issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
-
+  - *What did you do yesterday?* Transfered user task table to readme document for submission.
+  - *What are you planning to do today?* Meet with team to review our sprint and look over final submission document.
+  - *Any problems?* No problems. 
 
 -------------------------------------------------------------
 ## Sprint Review
