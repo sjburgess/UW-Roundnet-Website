@@ -7,7 +7,7 @@ This project is for the creation of a website for UW Roundnet, a university spor
 
 
 ## GitHub Repository
-[Link to our project repo](Readme.md) !! edited
+[Link to our project repo](README.md)
 
 
 ------------------------------------------------
@@ -39,20 +39,7 @@ This project is for the creation of a website for UW Roundnet, a university spor
 -----------------------------------------------
 ## Burndown Chart
 
-Day 2:
-
-<img width="188" alt="Screenshot 2024-09-29 at 2 53 12 PM" src="https://github.com/user-attachments/assets/dcb6bee6-2d3e-47d3-80d3-731366e2aab8">
-
-Day 5:
-
-<img width="507" alt="Screenshot 2024-09-29 at 2 53 27 PM" src="https://github.com/user-attachments/assets/726c7df9-2e2b-49a5-b88a-abc1c218a07c">
-
-Day 7:
-
-<img width="678" alt="Screenshot 2024-09-29 at 2 53 48 PM" src="https://github.com/user-attachments/assets/746e2cf9-f20b-4c2d-9e78-07730443afbe">
-
-
-
+*** Insert burndown chart ss****
 
 ### Task Breakdown
 | Task                                    | Story Number | Duration (hrs) | Priority (1-10)  | Complexity      | Lead Person  |
@@ -98,9 +85,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* No issues so far! 
 
 - **Sarah:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday?* Yesterday, I started looking at some other spikeball organization websites. To get some ideas about what my team could provide to our client.
+  - *What are you planning to do today?* Today, I continued researching and writing down ideas to get a better understanding of our project direction.
+  - *Any problems? No problems, but there were few universities I could find that also had Spikeball club websites.
 
 - **Basil:**
   - *What did you do yesterday? I completed market analysis research to observe functionality and graphical integrity of websites for similar organizations. I took note of aspects to retain in Badger Roundnet's website.* 
@@ -126,13 +113,13 @@ Please see the files section for our HTML, CSS, and JS prototype.
 
 ### Day 5: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?* Yesterday I finished working on user sotry taks with Sarah -- We created tasks that align with the scope and result the client is looking for. 
+  - *What did you do yesterday?* Yesterday I finished working on user story tasks with Sarah -- We created tasks that align with the scope and result the client is looking for. 
   - *What are you planning to do today?* Today, I created and formatted the readme file in github, added collaboraters and set up the struture for submission of sprint 1.
   - *Any problems?* The chart formatting is wonky and needs further attention to ensure it's formatted correctly moving forward. 
 
 - **Sarah:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
+  - *What did you do yesterday?* Yesterday, I was working with Savanna to develop user stories and get more specific about goals for the website.
+  - *What are you planning to do today?* Today I was brainstorming and helping to troubleshoot some formatting problems with the burndown chart in the readme file
   - *Any problems?* 
 
 - **Basil:**
@@ -164,8 +151,8 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* no issues! 
 
 - **Sarah:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
+ - *What did you do yesterday?* Yesterday, I did not have a chance to work on the project.
+  - *What are you planning to do today?* Today we have our sprint review, so will collaborate with the team to make sure we are all ready to submit the first sprint. Also provide feedback to another team.
   - *Any problems?* 
 
 - **Basil:**
@@ -193,10 +180,10 @@ Please see the files section for our HTML, CSS, and JS prototype.
 
 -------------------------------------------------------------
 ## Sprint Review
-1. We learned how to break down tasks and collaborate effectively using Trello.
-2. Our communication was effective due to regular updates via iMessage.
-3. Time estimation was a challenge. We underestimated some tasks.
-4. For the next sprint, we plan to dedicate more time to sprint planning and time estimation.
+1. We learned how to break down tasks and collaborate effectively using Trello. We also learned more about how to effectively use the burndown chart powerup. 
+2. Our communication was effective due to regular updates via iMessage and scheduled meetings.
+3. Time estimation was a challenge. We underestimated some tasks. One specific thing that didn't go well was the use of the burndown chart to follow progress. While this was our first time using the burndown chart, we realized that creating task cards during the spring produced weird effects on the burndown chart making it less straightforward and useful. 
+4. For the next sprint, we plan to dedicate more time to sprint planning and time estimation. Another thing we will be working on for the next sprint is to try and create all our task cards at the beginning of the sprint to make sure the burndown chart accurately represents our work.
 5. Yes, we are satisfied with what we completed for Sprint 1.
 6. Group 2 was invited to review. Feedback is below
 
