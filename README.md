@@ -95,9 +95,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems? No problems today.* 
 
 - **Ian:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday? I created and connected the Teamgantt chart to the Trello board today.* 
+  - *What are you planning to do today? Today I am planning to create and connect the burndown chart to the Trello board and Teamgantt chart.* 
+  - *Any problems? No questions or issues yet.*
 
 - **Mitchell:**
   - *What did you do yesterday?* 
