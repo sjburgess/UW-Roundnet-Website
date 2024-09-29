@@ -186,6 +186,8 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* 
 
 
+**** Insert text SS *****
+
 -------------------------------------------------------------
 ## Sprint Review
 1. We learned how to break down tasks and collaborate effectively using Trello.
@@ -193,5 +195,7 @@ Please see the files section for our HTML, CSS, and JS prototype.
 3. Time estimation was a challenge. We underestimated some tasks.
 4. For the next sprint, we plan to dedicate more time to sprint planning and time estimation.
 5. Yes, we are satisfied with what we completed for Sprint 1.
-6. Group XYZ was invited to review. All members were present and provided feedback on our design.
+6. Group 2 was invited to review. Feedback is below
+
+   **** Insert feedback from group **** 
 
