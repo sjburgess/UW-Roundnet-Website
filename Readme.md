@@ -40,6 +40,8 @@ This project is for the creation of a website for UW Roundnet, a university spor
 -----------------------------------------------
 ## Burndown Chart
 
+*** Insert burndown chart ss****
+
 ### Task Breakdown
 | Task                                    | Story Number | Duration (hrs) | Priority (1-10)  | Complexity      | Lead Person  |
 |-----------------------------------------|--------------|----------------|------------------|-----------------|--------------|
@@ -62,17 +64,6 @@ This project is for the creation of a website for UW Roundnet, a university spor
 | Document team progress for README       | 2            |                |                  |                 |              |
 | Create burndown chart                   | 2            |                |                  |                 |              |
 | burndown chart ss (Days 2, 5, 7)        | 2            |                |                  |                 |              |
-
-
-
-
-** INSERT BURNDOWN CHART SS ***
-
-
-
-
-
-
 
 
 
