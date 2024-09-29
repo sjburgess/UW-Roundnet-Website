@@ -40,12 +40,15 @@ This project is for the creation of a website for UW Roundnet, a university spor
 ## Burndown Chart
 
 Day 2:
+
 <img width="188" alt="Screenshot 2024-09-29 at 2 53 12 PM" src="https://github.com/user-attachments/assets/dcb6bee6-2d3e-47d3-80d3-731366e2aab8">
 
 Day 5:
+
 <img width="507" alt="Screenshot 2024-09-29 at 2 53 27 PM" src="https://github.com/user-attachments/assets/726c7df9-2e2b-49a5-b88a-abc1c218a07c">
 
 Day 7:
+
 <img width="678" alt="Screenshot 2024-09-29 at 2 53 48 PM" src="https://github.com/user-attachments/assets/746e2cf9-f20b-4c2d-9e78-07730443afbe">
 
 
