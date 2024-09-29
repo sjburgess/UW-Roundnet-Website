@@ -3,11 +3,12 @@
 ## Overview
 This project is for the creation of a website for UW Roundnet, a university sports club. The project is developed in an agile framework using Scrum for sprint-based development.
 
+
 -----------------------------------------------
 
 
 ## GitHub Repository
-[Link to our project repo](Readme.md)
+[Link to our project repo](README.md) !! edited
 
 
 ------------------------------------------------
@@ -39,43 +40,30 @@ This project is for the creation of a website for UW Roundnet, a university spor
 -----------------------------------------------
 ## Burndown Chart
 
-Day 2:
-
-<img width="188" alt="Screenshot 2024-09-29 at 2 53 12 PM" src="https://github.com/user-attachments/assets/dcb6bee6-2d3e-47d3-80d3-731366e2aab8">
-
-Day 5:
-
-<img width="507" alt="Screenshot 2024-09-29 at 2 53 27 PM" src="https://github.com/user-attachments/assets/726c7df9-2e2b-49a5-b88a-abc1c218a07c">
-
-Day 7:
-
-<img width="678" alt="Screenshot 2024-09-29 at 2 53 48 PM" src="https://github.com/user-attachments/assets/746e2cf9-f20b-4c2d-9e78-07730443afbe">
-
-
-
+*** Insert burndown chart ss****
 
 ### Task Breakdown
 | Task                                    | Story Number | Duration (hrs) | Priority (1-10)  | Complexity      | Lead Person  |
 |-----------------------------------------|--------------|----------------|------------------|-----------------|--------------|
-| Create main page layout                 | 1            |   2            |  10              |   High          |  Basil       |
-| Add navigation bar                      | 1            |   1            |  8               |   Med           |  Basil       |
-| Set up Trello board                     | 2            |   .5           |  10              |   Low           |  Ian         |
-| Design user interface prototype         | 1            |   3            |  10              |   Low           |  Mitchell    |
-| Write HTML for prototype                | 1            |   2            |  8               |   Med           |  Mitchell    |
-| Add CSS styles to the prototype         | 1            |   1            |  9               |   High          |  Basil       |
-| Research organization websites          | 3            |   1            |  5               |   Low           |  Sarah       |
-| Collect user stories                    | 2            |   2            |  5               |   Low           |  Savanna     |
-| Write JavaScript for interactivity      | 1            |   2            |  1               |   High          |  Basil       |
-| Test prototype functionality            | 1            |   1            |  6               |   Med           |  Mitchell    |
-| Connect prototype with external links   | 2            |   1            |  1               |   Med           |  Sarah       |
-| Finalize user stories                   | 2            |   1            |  10              |   Low           |  Sarah       |
-| Review prototype and gather feedback    | 3            |   1            |  8               |   Low           |  Lucas       |
-| Update user stories based on feedback   | 2            |   .5           |  8               |   Low           |  Lucas       |
-| Add Instagram and GroupMe links         | 2            |   1            |  1               |   Low           |  Lucas       |
-| Finalize and submit prototype           | 3            |   2            |  10              |   Low           |  Savanna     |
-| Document team progress for README       | 2            |   3            |  10              |   Low           |  Savanna     |
-| Create burndown chart                   | 2            |   2            |  10              |   Med           |  Ian         |
-| burndown chart ss (Days 2, 5, 7)        | 2            |   1            |  10              |   Low           |  Ian         |
+| Create main page layout                 | 1            |                |                  |                 |              |
+| Add navigation bar                      | 1            |                |                  |                 |              |
+| Set up Trello board                     | 2            |                |                  |                 |              |
+| Design user interface prototype         | 1            |                |                  |                 |              |
+| Write HTML for prototype                | 1            |                |                  |                 |              |
+| Add CSS styles to the prototype         | 1            |                |                  |                 |              |
+| Research organization websites          | 3            |                |                  |                 |              |
+| Collect user stories                    | 2            |                |                  |                 |              |
+| Write JavaScript for interactivity      | 1            |                |                  |                 |              |
+| Test prototype functionality            | 1            |                |                  |                 |              |
+| Connect prototype with external links   | 2            |                |                  |                 |              |
+| Finalize user stories                   | 2            |                |                  |                 |              |
+| Review prototype and gather feedback    | 3            |                |                  |                 |              |
+| Update user stories based on feedback   | 2            |                |                  |                 |              |
+| Add Instagram and GroupMe links         | 2            |                |                  |                 |              |
+| Finalize and submit prototype           | 3            |                |                  |                 |              |
+| Document team progress for README       | 2            |                |                  |                 |              |
+| Create burndown chart                   | 2            |                |                  |                 |              |
+| burndown chart ss (Days 2, 5, 7)        | 2            |                |                  |                 |              |
 
 
 
@@ -108,14 +96,14 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems? No problems today.* 
 
 - **Ian:**
-  - *What did you do yesterday? I created and connected the Teamgantt chart to the Trello board today.* 
-  - *What are you planning to do today? Today I am planning to create and connect the burndown chart to the Trello board and Teamgantt chart.* 
-  - *Any problems? No questions or issues yet.*
+  - *What did you do yesterday?* 
+  - *What are you planning to do today?* 
+  - *Any problems?* 
 
 - **Mitchell:**
-  - *What did you do yesterday? I started working on the JustinMind project prototype.
-  - *What are you planning to do today? I am planning to finish up the prototype within the coming days.
-  - *Any problems? I have had no issues so far.
+  - *What did you do yesterday?* 
+  - *What are you planning to do today?* 
+  - *Any problems?* 
 
 - **Lucas:**
   - *What did you do yesterday?* 
@@ -141,14 +129,14 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* 
 
 - **Ian:**
-  - *What did you do yesterday? Today I completed creating the burndown chart and connecting it to the Trello board.*
-  - *What are you planning to do today?* Today I will be adding a screenshot of the burndown chart to the readme file.*
-  - *Any problems?* No issues.*
+  - *What did you do yesterday?* 
+  - *What are you planning to do today?* 
+  - *Any problems?* 
 
 - **Mitchell:**
-  - *What did you do yesterday? I completed the prototype in Justinmind and sent it to Basil for edits.
-  - *What are you planning to do today? I am planning on assisting Basil in coding the prototype.   
-  - *Any problems? No issues so far.
+  - *What did you do yesterday?* 
+  - *What are you planning to do today?* 
+  - *Any problems?* 
 
 - **Lucas:**
   - *What did you do yesterday?* 
@@ -174,14 +162,14 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* 
 
 - **Ian:**
-  - *What did you do yesterday? Today I finished adding the burndown chart screenshot to the readme file.
-  - *What are you planning to do today? Today we will be conducting our sprint review and I am planning on helping format the readme file for submission.*
-  - *Any problems? No issues.*
+  - *What did you do yesterday?* 
+  - *What are you planning to do today?* 
+  - *Any problems?* 
 
 - **Mitchell:**
-  - *What did you do yesterday? I was away for the weekend so I did not get a chance to complete any work for the project.
-  - *What are you planning to do today? I am planning on reviewing the entire sprint 1 submission and making sure we have submitted all of the necessary files.
-  - *Any problems? No issues so far.
+  - *What did you do yesterday?* 
+  - *What are you planning to do today?* 
+  - *Any problems?* 
 
 - **Lucas:**
   - *What did you do yesterday?* 
