@@ -41,29 +41,27 @@ This project is for the creation of a website for UW Roundnet, a university spor
 ## Burndown Chart
 
 ### Task Breakdown
-
 | Task                                    | Story Number | Duration (hrs) | Priority (1-10)  | Complexity      | Lead Person  |
-|-----------------------------------------|--------------|----------------|------------------|-----------------|
-| Create main page layout                 | 1            |                |                  |                 |
-| Add navigation bar                      | 1            |                |                  |                 |
-| Set up Trello board                     | 2            |                |                  |                 |
-| Design user interface prototype         | 1            |                |                  |                 |
-| Write HTML for prototype                | 1            |                |                  |                 |
-| Add CSS styles to the prototype         | 1            |                |                  |                 |
-| Research organization websites          | 3            |                |                  |                 |
-| Collect user stories                    | 2            |                |                  |                 |
-| Write JavaScript for interactivity      | 1            |                |                  |                 |
-| Test prototype functionality            | 1            |                |                  |                 |
-| Connect prototype with external links   | 2            |                |                  |                 |
-| Finalize user stories                   | 2            |                |                  |                 |
-| Review prototype and gather feedback    | 3            |                |                  |                 |
-| Update user stories based on feedback   | 2            |                |                  |                 |
-| Add Instagram and GroupMe links         | 2            |                |                  |                 |
-| Finalize and submit prototype           | 3            |                |                  |                 |
-| Document team progress for README       | 2            |                |                  |                 |
-| Create burndown chart                   | 2            |                |                  |                 |
-|  burndown chart ss (Days 2, 5, 7)       | 2            |                |                  |
-
+|-----------------------------------------|--------------|----------------|------------------|-----------------|--------------|
+| Create main page layout                 | 1            |                |                  |                 |              |
+| Add navigation bar                      | 1            |                |                  |                 |              |
+| Set up Trello board                     | 2            |                |                  |                 |              |
+| Design user interface prototype         | 1            |                |                  |                 |              |
+| Write HTML for prototype                | 1            |                |                  |                 |              |
+| Add CSS styles to the prototype         | 1            |                |                  |                 |              |
+| Research organization websites          | 3            |                |                  |                 |              |
+| Collect user stories                    | 2            |                |                  |                 |              |
+| Write JavaScript for interactivity      | 1            |                |                  |                 |              |
+| Test prototype functionality            | 1            |                |                  |                 |              |
+| Connect prototype with external links   | 2            |                |                  |                 |              |
+| Finalize user stories                   | 2            |                |                  |                 |              |
+| Review prototype and gather feedback    | 3            |                |                  |                 |              |
+| Update user stories based on feedback   | 2            |                |                  |                 |              |
+| Add Instagram and GroupMe links         | 2            |                |                  |                 |              |
+| Finalize and submit prototype           | 3            |                |                  |                 |              |
+| Document team progress for README       | 2            |                |                  |                 |              |
+| Create burndown chart                   | 2            |                |                  |                 |              |
+| burndown chart ss (Days 2, 5, 7)        | 2            |                |                  |                 |              |
 
 
 
