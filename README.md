@@ -128,9 +128,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* 
 
 - **Ian:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday? Today I completed creating the burndown chart and connecting it to the Trello board.*
+  - *What are you planning to do today?* Today I will be adding a screenshot of the burndown chart to the readme file.*
+  - *Any problems?* No issues.*
 
 - **Mitchell:**
   - *What did you do yesterday?* 
@@ -161,9 +161,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* 
 
 - **Ian:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday? Today I finished adding the burndown chart screenshot to the readme file.
+  - *What are you planning to do today? Today we will be conducting our sprint review and I am planning on helping format the readme file for submission.*
+  - *Any problems? No issues.*
 
 - **Mitchell:**
   - *What did you do yesterday?* 
