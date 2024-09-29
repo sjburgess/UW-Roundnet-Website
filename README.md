@@ -181,10 +181,10 @@ Please see the files section for our HTML, CSS, and JS prototype.
 
 -------------------------------------------------------------
 ## Sprint Review
-1. We learned how to break down tasks and collaborate effectively using Trello.
+1. We learned how to break down tasks and collaborate effectively using Trello. We also learned more about how to effectively use the burndown chart powerup. 
 2. Our communication was effective due to regular updates via iMessage and scheduled meetings.
-3. Time estimation was a challenge. We underestimated some tasks.
-4. For the next sprint, we plan to dedicate more time to sprint planning and time estimation.
+3. Time estimation was a challenge. We underestimated some tasks. One specific thing that didn't go well was the use of the burndown chart to follow progress. While this was our first time using the burndown chart, we realized that creating task cards during the spring produced weird effects on the burndown chart making it less straightforward and useful. 
+4. For the next sprint, we plan to dedicate more time to sprint planning and time estimation. Another thing we will be working on for the next sprint is to try and create all our task cards at the beginning of the sprint to make sure the burndown chart accurately represents our work.
 5. Yes, we are satisfied with what we completed for Sprint 1.
 6. Group 2 was invited to review. Feedback is below
 
