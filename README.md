@@ -86,9 +86,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* No issues so far! 
 
 - **Sarah:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
-  - *Any problems?* 
+  - *What did you do yesterday?* Yesterday, I started looking at some other spikeball organization websites. To get some ideas about what my team could provide to our client.
+  - *What are you planning to do today?* Today, I continued researching and writing down ideas to get a better understanding of our project direction.
+  - *Any problems? No problems, but there were few universities I could find that also had Spikeball club websites.
 
 - **Basil:**
   - *What did you do yesterday? I completed market analysis research to observe functionality and graphical integrity of websites for similar organizations. I took note of aspects to retain in Badger Roundnet's website.* 
@@ -114,13 +114,13 @@ Please see the files section for our HTML, CSS, and JS prototype.
 
 ### Day 5: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?* Yesterday I finished working on user sotry taks with Sarah -- We created tasks that align with the scope and result the client is looking for. 
+  - *What did you do yesterday?* Yesterday I finished working on user story tasks with Sarah -- We created tasks that align with the scope and result the client is looking for. 
   - *What are you planning to do today?* Today, I created and formatted the readme file in github, added collaboraters and set up the struture for submission of sprint 1.
   - *Any problems?* The chart formatting is wonky and needs further attention to ensure it's formatted correctly moving forward. 
 
 - **Sarah:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
+  - *What did you do yesterday?* Yesterday, I was working with Savanna to develop user stories and get more specific about goals for the website.
+  - *What are you planning to do today?* Today I was brainstorming and helping to troubleshoot some formatting problems with the burndown chart in the readme file
   - *Any problems?* 
 
 - **Basil:**
@@ -152,8 +152,8 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems?* no issues! 
 
 - **Sarah:**
-  - *What did you do yesterday?* 
-  - *What are you planning to do today?* 
+ - *What did you do yesterday?* Yesterday, I did not have a chance to work on the project.
+  - *What are you planning to do today?* Today we have our sprint review, so will collaborate with the team to make sure we are all ready to submit the first sprint. Also provide feedback to another team.
   - *Any problems?* 
 
 - **Basil:**
@@ -182,7 +182,7 @@ Please see the files section for our HTML, CSS, and JS prototype.
 -------------------------------------------------------------
 ## Sprint Review
 1. We learned how to break down tasks and collaborate effectively using Trello.
-2. Our communication was effective due to regular updates via iMessage.
+2. Our communication was effective due to regular updates via iMessage and scheduled meetings.
 3. Time estimation was a challenge. We underestimated some tasks.
 4. For the next sprint, we plan to dedicate more time to sprint planning and time estimation.
 5. Yes, we are satisfied with what we completed for Sprint 1.
