@@ -39,7 +39,8 @@ This project is for the creation of a website for UW Roundnet, a university spor
 -----------------------------------------------
 ## Burndown Chart
 
-*** Insert burndown chart ss****
+<img width="701" alt="Screenshot 2024-09-29 at 2 41 31 PM" src="https://github.com/user-attachments/assets/e37ee36a-3f63-4693-ad90-68f028c7e4e7">
+
 
 ### Task Breakdown
 | Task                                    | Story Number | Duration (hrs) | Priority (1-10)  | Complexity      | Lead Person  |
