@@ -115,9 +115,9 @@ Please see the files section for our HTML, CSS, and JS prototype.
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
- - *What did you do yesterday?* Familiarized myself with the client and began brainstorming user stories.
- - *What are you planning to do today?* Assist in breaking down user stories into tasks and plan what implementation would look like.
- - *Any problems?* No issues yet.
+  - *What did you do yesterday?* Familiarized myself with the client and began brainstorming user stories.
+  - *What are you planning to do today?* Assist in breaking down user stories into tasks and plan what implementation would look like.
+  - *Any problems?* No issues yet.
 
 ---
 
