@@ -194,5 +194,16 @@ Please see the files section for our HTML, CSS, and JS prototype.
 5. Yes, we are satisfied with what we completed for Sprint 1.
 6. Group 2 was invited to review. Feedback is below
 
-   **** Insert feedback from group **** 
+   "
+      Things Group 3 did well:
+         - Their Trello board was laid out neatly and effectively
+         - Listing out practical user stories and linking those stories to your task breakdown chart
+         - Creating a robust task breakdown chart, and linking that to your Trello
+         - Adding detailed descriptions in your Scrum meetings
+      Things Group 3 could improve upon:
+         - Attaching/adjusting the margin on your burndown chart pictures
+         - Completing your Scrum meeting notes
+         - Incorporating CSS / JS to your website, or if they have done that, commit the changes to GitHub for review. 
+   Great work! 
+"
 
