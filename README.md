@@ -81,8 +81,9 @@ Day 7:
 
 
 ## Project Prototype
-We have created interactive prototypes for the website using Justinmind. You can view the prototype by [clicking here](https://cloud.justinmind.com/usernote/prototype/e500a8d55122c1afa6324bf97956c677cf59c9bacd1d98fce1fa10a35f9b58d4).
-Please see the files section for our HTML, CSS, and JS prototype.
+We have created interactive prototypes for the website using Justinmind.Please see the image below for the Jusitnmind prototype. Please see the files section for our HTML, CSS, and JS prototype.
+
+<img width="1439" alt="Screenshot 2024-09-29 at 9 19 17 PM" src="https://github.com/user-attachments/assets/c02743e5-a654-4e7f-938b-ee2124892940">
 
 -------------------------------------------------
 
