@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+
+    <style>
+      #backing {
+        background-color: #721410;
+      }
+      .logo {
+        width: 300px;
+        height: auto;
+      }
+
+      .roundnettitle {
+        width: 1110px;
+        display: flex;
+        justify-content: center;
+      }
+      form {
+        background-color: #ccc;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      button {
+        padding: 10px;
+        margin: auto;
+        background-color: #721410;
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      button:hover {
+        background-color: #ca1f01;
+      }
+    </style>
+  </head>
+  <body class="has-background-black pt-6">
+    <h1 class="title">
+      <!-- <div class="has-text-centered">
+        <p class="has-text-black">Badger Roundnet UW</p>
+      </div> -->
+      <div style="display: flex; justify-content: center">
+        <img
+          class="roundnettitle"
+          src="Screenshot 2024-09-27 at 12.03.23 PM.png"
+          alt=""
+        />
+      </div>
+    </h1>
+    <nav>
+      <div>
+        <div class="grid columns is-centered has-text-centered">
+          <a
+            class="subtitle has-text-white m-6 has-text-centered"
+            href="index.html"
+            >Home</a
+          >
+          <a class="subtitle has-text-white m-6 has-text-centered">About Us</a>
+          <a class="subtitle has-text-white m-6 has-text-centered"
+            >Board Members</a
+          >
+          <a class="subtitle has-text-white m-6 has-text-centered">Calendar</a>
+          <a class="subtitle has-text-white m-6 has-text-centered"
+            >Club Interest Form</a
+          >
+        </div>
+      </div>
+    </nav>
+    <form>
+      <h1>Interest Form</h1>
+      <p>
+        <label>Name: </label>
+        <input type="text" , id="name" , placeholder="Enter your name" required/>
+      </p>
+      <br />
+      <p>
+        <label>Email:</label>
+        <input type="email" , placeholder="Enter your email" required />
+      </p>
+      <br />
+      <p>
+        <label>Year:</label>
+        Freshman:  <input type="radio" , name="year" id="" /> <br />
+        Sophomore:  <input type="radio" , name="year" id="" /> <br /> Junior:  <input
+          type="radio"
+          ,
+          name="year"
+          id=""
+        />
+        <br />
+        Senior:  <input type="radio" , name="year" id="" /> <br />
+        Grad Student:  <input type="radio" , name="year" id="" />
+      </p>
+      <br />
+      <p>
+        <label>What are you interested in attending?: </label>Practices <input type="checkbox" />
+        <br />Tournaments <input type="checkbox" /> <br />Not sure
+        <input type="checkbox" />
+      </p>
+      <br />
+      <p>
+        <label>Which best describes your experience level? </label>Beginner:    <input
+          type="radio"
+          ,
+          name="experience"
+          id=""
+        />
+        <br />
+        Intermediate:  <input type="radio" , name="experience" id="" /> <br />
+        Advanced: <input type="radio" , name="experience" id="" />
+      </p>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  <footer>
+    <div
+      class="footer p-6 has-background-black has-text-centered has-text-white"
+    >
+      <p>Copyright, Badger Roundnet UW 2024</p>
+    </div>
+  </footer>
+</html>
