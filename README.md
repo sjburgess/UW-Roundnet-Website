@@ -91,8 +91,8 @@ Day 7:
   - *Any problems? No problems, but there were few universities I could find that also had Spikeball club websites.
 
 - **Basil:**
-  - *What did you do yesterday? I completed market analysis research to observe functionality and graphical integrity of websites for similar organizations. I took note of aspects to retain in Badger Roundnet's website.* 
-  - *What are you planning to do today? I plan to make edits to the prototype in Justinmind.* 
+  - *What did you do yesterday? I added a footer to match formatting of the title and inform users of intellectual property rights* 
+  - *What are you planning to do today? I plan to re-learn how to link pages* 
   - *Any problems? No problems today.* 
 
 - **Ian:**
@@ -125,9 +125,9 @@ Day 7:
   - *Any problems?* 
 
 - **Basil:**
-  - *What did you do yesterday? I continued writing HTML for the homepage of the prototype Badger Roundnet site.* 
-  - *What are you planning to do today? I plan to complete writing the HTML for the homepage of the prototype Badger Roundnet site and make edits to ensure it matches the approved prototype in Justinmind. I also plan to add the HTML to the github site.* 
-  - *Any problems?* 
+  - *What did you do yesterday? I finished linking each separate HTML page to the navbar buttons.* 
+  - *What are you planning to do today? I plan to make edits to each HTML page to ensure formatting is consistent between pages.* 
+  - *Any problems? No problems.* 
 
 - **Ian:**
   - *What did you do yesterday? Today I finished adding the burndown chart screenshot to the readme file.
