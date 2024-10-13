@@ -41,15 +41,18 @@ This project is for the creation of a website for UW Roundnet, a university spor
 
 Day 2:
 
-<img width="188" alt="Screenshot 2024-09-29 at 2 53 12 PM" src="https://github.com/user-attachments/assets/dcb6bee6-2d3e-47d3-80d3-731366e2aab8">
+<img width="698" alt="Screenshot 2024-10-08 at 5 37 25 PM" src="https://github.com/user-attachments/assets/4453013a-b30a-4d3b-9a42-d02ebf26c15a">
+
 
 Day 5:
 
-<img width="507" alt="Screenshot 2024-09-29 at 2 53 27 PM" src="https://github.com/user-attachments/assets/726c7df9-2e2b-49a5-b88a-abc1c218a07c">
+<img width="686" alt="Screenshot 2024-10-11 at 12 37 52 PM" src="https://github.com/user-attachments/assets/2c6402cb-4afd-41ca-9f3f-314f49950084">
+
 
 Day 7:
 
-<img width="678" alt="Screenshot 2024-09-29 at 2 53 48 PM" src="https://github.com/user-attachments/assets/746e2cf9-f20b-4c2d-9e78-07730443afbe">
+<img width="693" alt="Screenshot 2024-10-13 at 2 59 46 PM" src="https://github.com/user-attachments/assets/f47ff3a9-e753-433f-b030-7a58676c0dd3">
+
 
 ### Task Breakdown
 | Task                                    | Story Number | Duration (hrs) | Priority (1-10)  | Complexity      | Lead Person  |
