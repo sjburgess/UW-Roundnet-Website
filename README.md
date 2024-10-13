@@ -84,14 +84,14 @@ Day 7:
 
 ### Day 2: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?* Yesterday, I gathered initial user stories based on our teams discussions and created a list of what our client wants to see in the site. 
-  - *What are you planning to do today?*  Today, I started breaking down the user stories into tasks, once I have a better view of the prototype I will realign the tasks.
+  - *What did you do yesterday?*  Yesterday I completed research and gathered information to put into the about section on the website 
+  - *What are you planning to do today?*  Today I plan to compile photos and draft the basic layout for the page. 
   - *Any problems?* No issues so far! 
 
 - **Sarah:**
-  - *What did you do yesterday?* Yesterday, I started looking at some other spikeball organization websites. To get some ideas about what my team could provide to our client.
-  - *What are you planning to do today?* Today, I continued researching and writing down ideas to get a better understanding of our project direction.
-  - *Any problems? No problems, but there were few universities I could find that also had Spikeball club websites.
+  - *What did you do yesterday?*   Yesterday I did some research on what is best to include on interest forms
+  - *What are you planning to do today?*  Today I am going to do some research on html and css for forms
+  - *Any problems? No problems
 
 - **Basil:**
   - *What did you do yesterday? I added a footer to match formatting of the title and inform users of intellectual property rights* 
@@ -118,14 +118,14 @@ Day 7:
 
 ### Day 7: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?* Yesterday, I continued to format our readme submission file and reached out to another team for sprint review. 
-  - *What are you planning to do today?* Today I plan to fix the burndown chart formatting and finalze the readme for submission. 
+  - *What did you do yesterday?*  Yesterday ai collected photos and made a draft outline for the about section of the website. 
+  - *What are you planning to do today?*  Today I plan to upload the photos and finalize placement of the information and layout of the page. I also plan to upload my finished sheet to GitHub to eventually be added as a tab on the site. 
   - *Any problems?* no issues! 
 
 - **Sarah:**
- - *What did you do yesterday?* Yesterday, I did not have a chance to work on the project.
-  - *What are you planning to do today?* Today we have our sprint review, so will collaborate with the team to make sure we are all ready to submit the first sprint. Also provide feedback to another team.
-  - *Any problems?* 
+ - *What did you do yesterday?*  Yesterday, I started building the interest form page with html and css
+  - *What are you planning to do today?*    Today I am planning to finish building the form and ensure it looks right
+  - *Any problems?* No problems
 
 - **Basil:**
   - *What did you do yesterday? I finished linking each separate HTML page to the navbar buttons.* 
