@@ -99,8 +99,8 @@ Day 7:
   - *Any problems? No problems today.* 
 
 - **Ian:**
-  - *What did you do yesterday? I created and connected the Teamgantt chart to the Trello board today.* 
-  - *What are you planning to do today? Today I am planning to create and connect the burndown chart to the Trello board and Teamgantt chart.* 
+  - *What did you do yesterday? I created the Trello board tasks that will be completed over the sprint* 
+  - *What are you planning to do today? Today I am planning on taking a screenshot of the burndown chart* 
   - *Any problems? No questions or issues yet.*
 
 - **Mitchell:**
@@ -133,8 +133,8 @@ Day 7:
   - *Any problems? No problems.* 
 
 - **Ian:**
-  - *What did you do yesterday? Today I finished adding the burndown chart screenshot to the readme file.
-  - *What are you planning to do today? Today we will be conducting our sprint review and I am planning on helping format the readme file for submission.*
+  - *What did you do yesterday? Today I finished screenshotting the burndown chart
+  - *What are you planning to do today? Today I will help update the readme file for submission*
   - *Any problems? No issues.*
 
 - **Mitchell:**
