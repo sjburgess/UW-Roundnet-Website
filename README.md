@@ -101,8 +101,8 @@ Day 7:
   - *Any problems? No questions or issues yet.*
 
 - **Mitchell:**
-  - *What did you do yesterday? I started working on the JustinMind project prototype.
-  - *What are you planning to do today? I am planning to finish up the prototype within the coming days.
+  - *What did you do yesterday? I started working on getting the headshots for the board members page.
+  - *What are you planning to do today? I am planning on obtaining the information necessary to create the board members page.
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
@@ -136,7 +136,7 @@ Day 7:
 
 - **Mitchell:**
   - *What did you do yesterday? I was away for the weekend so I did not get a chance to complete any work for the project.
-  - *What are you planning to do today? I am planning on reviewing the entire sprint 1 submission and making sure we have submitted all of the necessary files.
+  - *What are you planning to do today? I am planning on finishing up my work on the Board Members page.
   - *Any problems? No issues so far.
 
 - **Lucas:**
@@ -146,9 +146,9 @@ Day 7:
 
 -------------------------------------------------------------
 ## Sprint Review
-1. We learned how to break down tasks and collaborate effectively using Trello. We also learned more about how to effectively use the burndown chart powerup. 
+1. We learned how to collaborate on a coding project at the same time using GitHub. We also learned how to delegate tasks throughout the team to make sure each team member has work to do that is suited to their skills.
 2. Our communication was effective due to regular updates via iMessage and scheduled meetings.
-3. Time estimation was a challenge. We underestimated some tasks. One specific thing that didn't go well was the use of the burndown chart to follow progress. While this was our first time using the burndown chart, we realized that creating task cards during the spring produced weird effects on the burndown chart making it less straightforward and useful. 
-4. For the next sprint, we plan to dedicate more time to sprint planning and time estimation. Another thing we will be working on for the next sprint is to try and create all our task cards at the beginning of the sprint to make sure the burndown chart accurately represents our work.
-5. Yes, we are satisfied with what we completed for Sprint 1.
+3. The main challenge for this sprint was deciding what tasks to try to complete. We did not want to rush too far ahead into this project, but we also wanted to complete a significant amount of work. It was difficult to determine how much work was enough, without going too fast.
+4. For the next sprint, we plan to spend more time at the beginning of the sprint determining the delegation of tasks. We will have a more in depth sprint intialization meeting in order to divide tasks equally.
+5. Yes, we are satisfied with what we completed for this sprint.
 
