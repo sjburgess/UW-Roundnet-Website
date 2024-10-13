@@ -123,9 +123,9 @@ Day 7:
   - *Any problems?* no issues! 
 
 - **Sarah:**
- - *What did you do yesterday?*  Yesterday, I started building the interest form page with html and css
-  - *What are you planning to do today?*    Today I am planning to finish building the form and ensure it looks right
-  - *Any problems?* No problems
+    - *What did you do yesterday?*  Yesterday, I started building the interest form page with html and css
+     - *What are you planning to do today?*    Today I am planning to finish building the form and ensure it looks right
+     - *Any problems?* No problems
 
 - **Basil:**
   - *What did you do yesterday? I finished linking each separate HTML page to the navbar buttons.* 
