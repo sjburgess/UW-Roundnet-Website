@@ -1,4 +1,4 @@
-# UW Roundnet Website Project - Sprint 1 
+# UW Roundnet Website Project - Sprint 2
 
 ## Overview
 This project is for the creation of a website for UW Roundnet, a university sports club. The project is developed in an agile framework using Scrum for sprint-based development.
@@ -54,22 +54,19 @@ Day 7:
 ### Task Breakdown
 | Task                                    | Story Number | Duration (hrs) | Priority (1-10)  | Complexity      | Lead Person  |
 |-----------------------------------------|--------------|----------------|------------------|-----------------|--------------|
-| Create main page layout                 | 1            |   2            |  10              |   High          |  Basil       |
-| Add navigation bar                      | 1            |   1            |  8               |   Med           |  Basil       |
-| Set up Trello board                     | 2            |   .5           |  10              |   Low           |  Ian         |
-| Design user interface prototype         | 1            |   3            |  10              |   Low           |  Mitchell    |
-| Write HTML for prototype                | 1            |   2            |  8               |   Med           |  Mitchell    |
-| Add CSS styles to the prototype         | 1            |   1            |  9               |   High          |  Basil       |
-| Research organization websites          | 3            |   1            |  5               |   Low           |  Sarah       |
-| Collect user stories                    | 2            |   2            |  5               |   Low           |  Savanna     |
-| Write JavaScript for interactivity      | 1            |   2            |  1               |   High          |  Basil       |
-| Test prototype functionality            | 1            |   1            |  6               |   Med           |  Mitchell    |
+| Update Readme Page                      | 1            |   2            |  10              |   Low           |  Mitchell    |
+| Link Nav Bar to New Pages               | 1            |   1            |  8               |   Med           |  Basil       |
+| Set up Trello board                     | 1            |   .5           |  10              |   Low           |  Ian         |
+| Obtain Board Members Information        | 4            |   2            |  10              |   Low           |  Mitchell    |
+| Create Board Members Static Page        | 4            |   3            |  8               |   High          |  Mitchell    |
+| Create Calendar Page                    | 1            |   2            |  9               |   High          |  Lucas       |
+| Create Interst Form Static Page         | 3            |   2            |  10              |   High          |  Sarah       |
+| Research Interst Forms Online           | 3            |   1            |  5               |   Low           |  Sarah       |
+| Create About Us Page                    | 2            |   2            |  10              |   High          |  Savanna     |
+| Create Contact Us Page                  | 5            |   1            |  6               |   Med           |  Savanna     |
 | Connect prototype with external links   | 2            |   1            |  1               |   Med           |  Sarah       |
 | Finalize user stories                   | 2            |   1            |  10              |   Low           |  Sarah       |
-| Review prototype and gather feedback    | 3            |   1            |  8               |   Low           |  Lucas       |
 | Update user stories based on feedback   | 2            |   .5           |  8               |   Low           |  Lucas       |
-| Add Instagram and GroupMe links         | 2            |   1            |  1               |   Low           |  Lucas       |
-| Finalize and submit prototype           | 3            |   2            |  10              |   Low           |  Savanna     |
 | Document team progress for README       | 2            |   3            |  10              |   Low           |  Savanna     |
 | Create burndown chart                   | 2            |   2            |  10              |   Med           |  Ian         |
 | burndown chart ss (Days 2, 5, 7)        | 2            |   1            |  10              |   Low           |  Ian         |
@@ -79,13 +76,6 @@ Day 7:
 
 ------------------------------------------------
 
-
-## Project Prototype
-We have created interactive prototypes for the website using Justinmind.Please see the image below for the Jusitnmind prototype. Please see the files section for our HTML, CSS, and JS prototype.
-
-<img width="1439" alt="Screenshot 2024-09-29 at 9 19 17 PM" src="https://github.com/user-attachments/assets/c02743e5-a654-4e7f-938b-ee2124892940">
-
--------------------------------------------------
 
 ## Daily Scrum
 
@@ -122,38 +112,6 @@ We have created interactive prototypes for the website using Justinmind.Please s
 
 ---
 
-### Day 5: Daily Scrum Meeting
-- **Savanna:**
-  - *What did you do yesterday?* Yesterday I finished working on user story tasks with Sarah -- We created tasks that align with the scope and result the client is looking for. 
-  - *What are you planning to do today?* Today, I created and formatted the readme file in github, added collaboraters and set up the struture for submission of sprint 1.
-  - *Any problems?* The chart formatting is wonky and needs further attention to ensure it's formatted correctly moving forward. 
-
-- **Sarah:**
-  - *What did you do yesterday?* Yesterday, I was working with Savanna to develop user stories and get more specific about goals for the website.
-  - *What are you planning to do today?* Today I was brainstorming and helping to troubleshoot some formatting problems with the burndown chart in the readme file
-  - *Any problems?* 
-
-- **Basil:**
-  - *What did you do yesterday? I completed edits in Justinmind and created a homepage titlescreen graphic to be used on each page of the website.* 
-  - *What are you planning to do today? I plan to create HTML, CSS, and JS files to code website functionalities for the entire project. I also plan to begin coding the prototype homepage in HTML.* 
-  - *Any problems?* 
-
-- **Ian:**
-  - *What did you do yesterday? Today I completed creating the burndown chart and connecting it to the Trello board.*
-  - *What are you planning to do today?* Today I will be adding a screenshot of the burndown chart to the readme file.*
-  - *Any problems?* No issues.*
-
-- **Mitchell:**
-  - *What did you do yesterday? I completed the prototype in Justinmind and sent it to Basil for edits.
-  - *What are you planning to do today? I am planning on assisting Basil in coding the prototype.   
-  - *Any problems? No issues so far.
-
-- **Lucas:**
-  - *What did you do yesterday?* Record our user stories on a table and assign priority, complexity, and lead team member to each task.
-  - *What are you planning to do today?* I'm going to meet with the client to ask them some logistical questions about how their club operates.
-  - *Any problems?* Nope!
- 
----
 
 ### Day 7: Daily Scrum Meeting
 - **Savanna:**
@@ -193,29 +151,4 @@ We have created interactive prototypes for the website using Justinmind.Please s
 3. Time estimation was a challenge. We underestimated some tasks. One specific thing that didn't go well was the use of the burndown chart to follow progress. While this was our first time using the burndown chart, we realized that creating task cards during the spring produced weird effects on the burndown chart making it less straightforward and useful. 
 4. For the next sprint, we plan to dedicate more time to sprint planning and time estimation. Another thing we will be working on for the next sprint is to try and create all our task cards at the beginning of the sprint to make sure the burndown chart accurately represents our work.
 5. Yes, we are satisfied with what we completed for Sprint 1.
-6. Group 2 was invited to review. Feedback is below
-
-   "
-   
-      Things Group 3 did well:
-   
-         - Their Trello board was laid out neatly and effectively
-   
-         - Listing out practical user stories and linking those stories to your task breakdown chart
-   
-         - Creating a robust task breakdown chart, and linking that to your Trello
-   
-         - Adding detailed descriptions in your Scrum meetings
-   
-      Things Group 3 could improve upon:
-   
-         - Attaching/adjusting the margin on your burndown chart pictures
-   
-         - Completing your Scrum meeting notes
-   
-         - Incorporating CSS / JS to your website, or if they have done that, commit the changes to GitHub for review.
-   
-   Great work!
-   
-"
 
