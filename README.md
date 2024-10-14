@@ -109,9 +109,9 @@ Day 7:
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* Familiarized myself with the client and began brainstorming user stories.
-  - *What are you planning to do today?* Assist in breaking down user stories into tasks and plan what implementation would look like.
-  - *Any problems?* No issues yet.
+  - *What did you do yesterday?* Confirmed with client which users would have access to edit calendar events.  
+  - *What are you planning to do today?* Create a new google calendar and add appropriate users. 
+  - *Any problems?* No issues.
 
 ---
 
@@ -143,8 +143,8 @@ Day 7:
   - *Any problems? No issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* Transfered user task table to readme document for submission.
-  - *What are you planning to do today?* Meet with team to review our sprint and look over final submission document.
+  - *What did you do yesterday?* I pulled the embed link from google calendar and inserted it on the calendar tab. 
+  - *What are you planning to do today?* Finalizing formatting for the calendar tab. 
   - *Any problems?* No problems. 
 
 -------------------------------------------------------------
