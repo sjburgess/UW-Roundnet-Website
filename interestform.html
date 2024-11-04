@@ -26,7 +26,7 @@
       form {
         background-color: #ccc;
         max-width: 500px;
-        margin: auto;
+        margin: 10px auto;
         padding: 20px 10px;
         border: 1px solid #ccc;
         border-radius: 10px;
@@ -49,6 +49,9 @@
       }
       button:hover {
         background-color: #ca1f01;
+      }
+      sub-label {
+        margin-left: 15px;
       }
     </style>
   </head>
@@ -84,52 +87,61 @@
         </div>
       </div>
     </nav>
+    <div class="columns" id="backing"> 
     <form>
       <h1>Interest Form</h1>
-      <p>
-        <label>Name: </label>
-        <input type="text" , id="name" , placeholder="Enter your name" required/>
-      </p>
-      <br />
-      <p>
-        <label>Email:</label>
-        <input type="email" , placeholder="Enter your email" required />
-      </p>
-      <br />
-      <p>
-        <label>Year:</label>
-        Freshman:  <input type="radio" , name="year" id="" /> <br />
-        Sophomore:  <input type="radio" , name="year" id="" /> <br /> Junior:  <input
-          type="radio"
-          ,
-          name="year"
-          id=""
-        />
-        <br />
-        Senior:  <input type="radio" , name="year" id="" /> <br />
-        Grad Student:  <input type="radio" , name="year" id="" />
-      </p>
-      <br />
-      <p>
-        <label>What are you interested in attending?: </label>Practices <input type="checkbox" />
-        <br />Tournaments <input type="checkbox" /> <br />Not sure
-        <input type="checkbox" />
-      </p>
-      <br />
-      <p>
-        <label>Which best describes your experience level? </label>Beginner:    <input
-          type="radio"
-          ,
-          name="experience"
-          id=""
-        />
-        <br />
-        Intermediate:  <input type="radio" , name="experience" id="" /> <br />
-        Advanced: <input type="radio" , name="experience" id="" />
-      </p>
-      <br />
+      <br>
+      <table>
+      <tr>
+        <td><label>Name:</label></td>
+        <td><input type="text" , id="name" , placeholder="Enter your name" required/></td>
+      </tr>
+      <tr>
+        <td><label>Email:</label></td>
+        <td><input type="email" , placeholder="Enter your email" required /></td>
+      </tr>
+      <tr>
+        <td><label>Year:</label></td>
+        <td>
+        <select name="year" id="year">
+          <option value="" disabled selected>Select</option>
+          <option value="Freshman">Freshman</option>
+          <option value="Sophomore">Sophomore</option>
+          <option value="Junior">Junior</option>
+          <option value="Senior">Senior</option>
+          <option value="Grad Student">Grad Student</option>
+        </select>
+      </td>
+      </tr>
+      <tr>
+        <td><label>What are you interested in attending? </label> </td> 
+      </tr>
+      <tr>
+        <td><sub-label>Practice:</sub-label></td>
+        <td><input type="checkbox" id="practice" name="interest" value="practice"></td></tr>
+      <tr>
+        <td><sub-label>Tournaments:</sub-label></td>
+          <td><input type="checkbox" id="tournaments" name="interest" value="tournaments"></td></tr>
+      <tr>
+            <td><sub-label>Not sure:</sub-label></td>
+            <td><input type="checkbox" id="not sure" name="interest" value="not sure"></td></tr>
+      <tr>
+        <td><label>Which best describes your experience level? </label> </td> 
+      </tr>
+      <tr>
+        <td><sub-label>Beginner:</sub-label></td>
+        <td><input type="radio" id="beginner" name="experience" value="beginner"></td></tr>
+      <tr>
+        <td><sub-label>Intermediate:</sub-label></td>
+          <td><input type="radio" id="intermediate" name="experience" value="intermediate"></td></tr>
+      <tr>
+            <td><sub-label>Advanced:</sub-label></td>
+            <td><input type="radio" id="advanced" name="experience" value="advanced"></td></tr>
+    </table>
+    <br>
       <button type="submit">Submit</button>
     </form>
+    </div>
   <footer>
     <div
       class="footer p-6 has-background-black has-text-centered has-text-white"
