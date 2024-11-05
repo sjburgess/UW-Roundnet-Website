@@ -23,6 +23,54 @@
         display: flex;
         justify-content: center;
       }
+
+      .logo {
+        width: 300px;
+        height: auto;
+      }
+
+      .roundnettitle {
+        width: 1110px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .has-text-white {
+        color: white;
+        margin-bottom: 4rem;
+      }
+
+      .section {
+        padding: 2rem;
+        border: 2px solid white;
+        border-radius: 8px;
+        margin: 1.5rem 0;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      p {
+        margin-bottom: 4rem;
+        margin-top: 0.5rem;
+      }
+
+      ul {
+        margin-bottom: 4rem;
+      }
+
+      .container {
+        padding: 2rem;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+      }
+
+      .image-container img {
+        width: 48%;
+        height: auto;
+      }
     </style>
   </head>
   <body class="has-background-black pt-6">
@@ -96,26 +144,27 @@
       </div>
     </div>
     <script>
-      //firebase config
-      // const firebaseConfig = {
-      //   apiKey: "AIzaSyDZvq9LJ_DILxa2WTz1UdGiwM9mQ63gMio",
-      //   authDomain: "uw-roundnet-project.firebaseapp.com",
-      //   projectId: "uw-roundnet-project",
-      //   storageBucket: "uw-roundnet-project.firebasestorage.app",
-      //   messagingSenderId: "184402537716",
-      //   appId: "1:184402537716:web:46320ad6b9bec38c1702a1",
-      //   measurementId: "G-7LSHC5MLL3",
-      // };
+      firebase config
+      const firebaseConfig = {
+        apiKey: "AIzaSyDZvq9LJ_DILxa2WTz1UdGiwM9mQ63gMio",
+        authDomain: "uw-roundnet-project.firebaseapp.com",
+        projectId: "uw-roundnet-project",
+        storageBucket: "uw-roundnet-project.firebasestorage.app",
+        messagingSenderId: "184402537716",
+        appId: "1:184402537716:web:46320ad6b9bec38c1702a1",
+        measurementId: "G-7LSHC5MLL3",
+      };
 
-      // // Initialize Firebase
-      // firebase.initializeApp(firebaseConfig);
-      // // define authentication variable
-      // let auth = firebase.auth();
-      // let db = firebase.firestore();
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // define authentication variable
+      let auth = firebase.auth();
+      let db = firebase.firestore();
 
-      // // define a storage reference
-      // let ref = firebase.storage().ref();
+      // define a storage reference
+      let ref = firebase.storage().ref();
     </script>
+    <script src="app.js"></script>
   </body>
 
   <footer>
