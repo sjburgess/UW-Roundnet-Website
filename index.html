@@ -108,6 +108,15 @@
         appId: "1:184402537716:web:46320ad6b9bec38c1702a1",
         measurementId: "G-7LSHC5MLL3",
       };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // define authentication variable
+      let auth = firebase.auth();
+      let db = firebase.firestore();
+
+      // define a storage reference
+      let ref = firebase.storage().ref();
     </script>
   </body>
 
