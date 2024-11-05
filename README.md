@@ -1,4 +1,4 @@
-# UW Roundnet Website Project - Sprint 2
+# UW Roundnet Website Project - Sprint 3
 
 ## Overview
 This project is for the creation of a website for UW Roundnet, a university sports club. The project is developed in an agile framework using Scrum for sprint-based development.
@@ -13,8 +13,8 @@ This project is for the creation of a website for UW Roundnet, a university spor
 ------------------------------------------------
 
 ## User Stories
-1. **Practice Times:**  
-   “As a user, I want to easily see when and where practice sessions are, so that I can plan to attend.”
+1. **Interest Form:**  
+   “As a user, I want to submit my information to be included in any future notifications.”
    
 2. **Club Information:**  
    “As a user, I want to learn what UW Roundnet is about, so I can understand the purpose of the club.”
@@ -24,12 +24,85 @@ This project is for the creation of a website for UW Roundnet, a university spor
    
 4. **Board Members:**  
    “As a user, I want to know who the club board members are, so I can reach out if needed.”
-   
-5. **Social Media Links:**  
-   “As a user, I want to connect with the club on social media, so I can stay updated.”
 
 ---------------------------------------------
+DELETE SECTION AFTER TAKING INFO
 
+## Core Functional Requirements
+
+1. **Club About Us Page**: Provide information about UW Roundnet's purpose and activities.
+2. **Calendar Page**: Display upcoming tournament dates and details.
+3. **Board Members Page**: List current board members and provide their contact information.
+4. **Interest for Page**: Collect information from interested users 
+5. **Data Display Page**: Provide information to logged in users 
+---
+DELETE SECTION AFTER TAKING INFO
+## Prototype & Functions
+
+The prototype for the website will include the following components:
+
+- **Homepage**: Includes an overview of the club.
+- **Dedicated Pages** for:
+  - About Us
+  - Calendar integration
+  - Board members' information
+  - Interest Form
+  - Members display
+---
+DELETE SECTION AFTER TAKING INFO
+
+## Diagrams
+
+### Use Case and Sequence Diagrams
+
+- **Use Case Diagrams**: Outline the main interactions between the user and the website features.
+- **Sequence Diagrams**: Show the flow of actions for key interactions, including:
+  - Viewing events/practices on calendar
+  - Accessing board members' information
+  - Accessing other members information
+  - Submitting interest forms 
+
+### Entity-Relationship (E-R) Diagram
+
+- Displays relationships between entities such as **Users**, **Events**, and **Board Members**.
+
+### Additional Diagrams
+
+- **Context Diagram**: Provides an overview of interactions between the website and external systems, such as the Google Calendar API.
+- **Data Flow Diagram (Level 0)**: Visualizes data flow for the entire system.
+- **Data Flow Diagram (Level 1)**: Detailed breakdown of the primary processes.
+- **Use Case Diagram**: Shows user interactions with key website features.
+- **Activity Diagrams** for scenarios, including:
+  - Accessing Celndar event times
+  - Filling out Interest form 
+
+---
+DELETE SECTION AFTER TAKING INFO
+
+## Collections and Fields
+
+The following collections and their fields will be included in the database design:
+
+- **Users**:
+  - `user_id`
+  - `name`
+  - `email`
+  - `role`
+
+- **Events**:
+  - `event_id`
+  - `name`
+  - `date`
+  - `location`
+
+- **Board Members**:
+  - `member_id`
+  - `name`
+  - `position`
+  - `contact_info`
+ 
+    DELETE SECTION AFTER TAKING INFO
+----------------------------------------------
 
 ## Trello Board
 [Click here to view our Trello board](https://trello.com/invite/b/66ec8fb0dbc77584d08a14ce/ATTIa2f99009276f461812cc7593b1f89644F76460DD/is-424-spikeball-project).  
@@ -57,18 +130,18 @@ Day 7:
 ### Task Breakdown
 | Task                                    | Story Number | Duration (hrs) | Priority (1-10)  | Complexity      | Lead Person  |
 |-----------------------------------------|--------------|----------------|------------------|-----------------|--------------|
-| Update Readme Page                      | 1            |   2            |  10              |   Low           |  Mitchell    |
-| Link Nav Bar to New Pages               | 1            |   1            |  8               |   Med           |  Basil       |
+| Fix colors in css                       | 1            |   2            |  10              |   Low           |  Mitchell    |
+| refactor site into single app platform  | 1            |   1            |  10              |   Med           |  Basil       |
 | Set up Trello board                     | 1            |   .5           |  10              |   Low           |  Ian         |
-| Obtain Board Members Information        | 4            |   2            |  10              |   Low           |  Mitchell    |
-| Create Board Members Static Page        | 4            |   3            |  8               |   High          |  Mitchell    |
-| Create Calendar Page                    | 1            |   2            |  9               |   High          |  Lucas       |
-| Create Interst Form Static Page         | 3            |   2            |  10              |   High          |  Sarah       |
-| Research Interst Forms Online           | 3            |   1            |  5               |   Low           |  Sarah       |
-| Create About Us Page                    | 2            |   2            |  10              |   High          |  Savanna     |
+| Fix logo background color               | 4            |   2            |  6               |   Low           |  Mitchell    |
+| Add additional nav page for data        | 4            |   3            |  6               |   High          |  Mitchell    |
+| Edit logo colors                        | 1            |   2            |  6               |   High          |  Lucas       |
+| Edit Interst Form Static Page           | 1            |   2            |  5               |   Med           |  Sarah       |
+| Describe Prototype & Functions          | 3            |   1            |  5               |   Low           |  Savanna     |
+| Describe core functional requirements   | 2            |   2            |  7               |   Low           |  Savanna     |
 | Create Contact Us Page                  | 5            |   1            |  6               |   Med           |  Savanna     |
-| Connect prototype with external links   | 2            |   1            |  1               |   Med           |  Sarah       |
-| Finalize user stories                   | 2            |   1            |  10              |   Low           |  Sarah       |
+| Connect firestore                       | 2            |   1            |  6               |   Med           |  Sarah       |
+| Connect Interest form to firestore      | 1            |   1            |  8               |   Low           |  Sarah       |
 | Update user stories based on feedback   | 2            |   .5           |  8               |   Low           |  Lucas       |
 | Document team progress for README       | 2            |   3            |  10              |   Low           |  Savanna     |
 | Create burndown chart                   | 2            |   2            |  10              |   Med           |  Ian         |
@@ -84,8 +157,8 @@ Day 7:
 
 ### Day 2: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?*  Yesterday I completed research and gathered information to put into the about section on the website 
-  - *What are you planning to do today?*  Today I plan to compile photos and draft the basic layout for the page. 
+  - *What did you do yesterday?*  Yesterday I Compiled information between the milestone and Sprint and started drafting initial tasks to complete
+  - *What are you planning to do today?*  Today I plan to draft a re-structure of the READ ME, to accurately reflect sprint 3 progress 
   - *Any problems?* No issues so far! 
 
 - **Sarah:**
@@ -118,8 +191,8 @@ Day 7:
 
 ### Day 7: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?*  Yesterday ai collected photos and made a draft outline for the about section of the website. 
-  - *What are you planning to do today?*  Today I plan to upload the photos and finalize placement of the information and layout of the page. I also plan to upload my finished sheet to GitHub to eventually be added as a tab on the site. 
+  - *What did you do yesterday?*  Yesterday I Finished descriptions needed for the sprint 3 functionality and requirements
+  - *What are you planning to do today?*  Today I plan to finaalize the Read Me structure for work showing our Sprint 3 progress
   - *Any problems?* no issues! 
 
 - **Sarah:**
@@ -149,9 +222,13 @@ Day 7:
 
 -------------------------------------------------------------
 ## Sprint Review
-1. We learned how to collaborate on a coding project at the same time using GitHub. We also learned how to delegate tasks throughout the team to make sure each team member has work to do that is suited to their skills.
-2. Our communication was effective due to regular updates via iMessage and scheduled meetings.
-3. The main challenge for this sprint was deciding what tasks to try to complete. We did not want to rush too far ahead into this project, but we also wanted to complete a significant amount of work. It was difficult to determine how much work was enough, without going too fast.
-4. For the next sprint, we plan to spend more time at the beginning of the sprint determining the delegation of tasks. We will have a more in depth sprint intialization meeting in order to divide tasks equally.
-5. Yes, we are satisfied with what we completed for this sprint.
 
+**What did you learn from this sprint?** We learned time management and collaboration skills the most. Now that we all have seperate things to be working on, the use of branches and further collaboration between each person to avoid conflict was neccessary. 
+
+**What did go well? Why?** We accomplished many tasks overall. Working on smaller ones first then tackling the larger ones was a successful strategy. Updating other members of the group if help is needed and rearrange work duties was also helpful. 
+
+**What didn’t go well? Why not?** Nothing deliberatly went bed, however, a few things within firestore and setting up for our data collections within firestore was initially confusing, integrating all of our pages into a single page was a slightly long process as well. 
+
+**How can you make things better next time?** Integrating feedback from out last sprint quicker or immidiately after could make work towards future progress go faster. 
+
+**Are you satisfied with what you already completed?** Yes, this Sprint allowed us to fix some smaller things within making it into a single page app. We also updated our page to be where it needs to with firestore integration thorugh the interest form. 
