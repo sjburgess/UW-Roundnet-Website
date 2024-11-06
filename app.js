@@ -253,3 +253,8 @@ document.querySelector("#form").addEventListener("click", (event) => {
       <button type="submit">Submit</button>
     </form>`;
 });
+
+document.querySelector("#members").addEventListener("click", (event) => {
+  backing.innerHTML = `<div>
+</div>`;
+});
