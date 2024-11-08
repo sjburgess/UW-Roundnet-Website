@@ -263,16 +263,18 @@ document.querySelector("#submit").addEventListener("click", () => {
   let name = document.querySelector("#name").value;
   let email = document.querySelector("#email").value;
   let year = document.querySelector("#year").value;
-  let interest = document.querySelector("#interest").value;
-  let experience = document.querySelector("#experience").value;
-
-  console.log(name);
+  let interests = Array.from(
+    document.querySelectorAll("input[name='interest']:checked")
+  ).map((checkbox) => checkbox.value);
+  let experience = document.querySelector(
+    "input[name='experience']:checked"
+  ).value;
 
   let member = {
     name: name,
     email: email,
     year: year,
-    interest: interest,
+    interest: interests,
     experience: experience,
   };
   // save member into database
