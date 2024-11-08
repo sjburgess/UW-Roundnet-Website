@@ -258,3 +258,27 @@ document.querySelector("#members").addEventListener("click", (event) => {
   backing.innerHTML = `<div>
 </div>`;
 });
+
+document.querySelector("#submit").addEventListener("click", () => {
+  let name = document.querySelector("#name").value;
+  let email = document.querySelector("#email").value;
+  let year = document.querySelector("#year").value;
+  let interest = document.querySelector("#interest").value;
+  let experience = document.querySelector("#experience").value;
+
+  console.log(name);
+
+  let member = {
+    name: name,
+    email: email,
+    year: year,
+    interest: interest,
+    experience: experience,
+  };
+  // save member into database
+  db.collection("mypeople")
+    .add(member)
+    .then(() => {
+      alert("New member added!");
+    });
+});

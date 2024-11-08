@@ -99,61 +99,129 @@
         </div>
       </div>
     </nav>
-    <div class="columns" id="backing"> 
-    <form>
-      <h1>Interest Form</h1>
-      <br>
-      <table>
-      <tr>
-        <td><label>Name:</label></td>
-        <td><input type="text" , id="name" , placeholder="Enter your name" required/></td>
-      </tr>
-      <tr>
-        <td><label>Email:</label></td>
-        <td><input type="email" , placeholder="Enter your email" required /></td>
-      </tr>
-      <tr>
-        <td><label>Year:</label></td>
-        <td>
-        <select name="year" id="year">
-          <option value="" disabled selected>Select</option>
-          <option value="Freshman">Freshman</option>
-          <option value="Sophomore">Sophomore</option>
-          <option value="Junior">Junior</option>
-          <option value="Senior">Senior</option>
-          <option value="Grad Student">Grad Student</option>
-        </select>
-      </td>
-      </tr>
-      <tr>
-        <td><label>What are you interested in attending? </label> </td> 
-      </tr>
-      <tr>
-        <td><sub-label>Practice:</sub-label></td>
-        <td><input type="checkbox" id="practice" name="interest" value="practice"></td></tr>
-      <tr>
-        <td><sub-label>Tournaments:</sub-label></td>
-          <td><input type="checkbox" id="tournaments" name="interest" value="tournaments"></td></tr>
-      <tr>
+    <div class="columns" id="backing">
+      <form>
+        <h1>Interest Form</h1>
+        <br />
+        <table>
+          <tr>
+            <td><label>Name:</label></td>
+            <td>
+              <input
+                type="text"
+                ,
+                id="name"
+                ,
+                placeholder="Enter your name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Email:</label></td>
+            <td>
+              <input
+                id="email"
+                ,
+                type="email"
+                ,
+                placeholder="Enter your email"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Year:</label></td>
+            <td>
+              <select name="year" id="year">
+                <option value="" disabled selected>Select</option>
+                <option value="Freshman">Freshman</option>
+                <option value="Sophomore">Sophomore</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+                <option value="Grad Student">Grad Student</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>What are you interested in attending? </label></td>
+          </tr>
+          <tr>
+            <td><sub-label>Practice:</sub-label></td>
+            <td>
+              <input
+                type="checkbox"
+                id="practice"
+                name="interest"
+                value="practice"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><sub-label>Tournaments:</sub-label></td>
+            <td>
+              <input
+                type="checkbox"
+                id="tournaments"
+                name="interest"
+                value="tournaments"
+              />
+            </td>
+          </tr>
+          <tr>
             <td><sub-label>Not sure:</sub-label></td>
-            <td><input type="checkbox" id="not sure" name="interest" value="not sure"></td></tr>
-      <tr>
-        <td><label>Which best describes your experience level? </label> </td> 
-      </tr>
-      <tr>
-        <td><sub-label>Beginner:</sub-label></td>
-        <td><input type="radio" id="beginner" name="experience" value="beginner"></td></tr>
-      <tr>
-        <td><sub-label>Intermediate:</sub-label></td>
-          <td><input type="radio" id="intermediate" name="experience" value="intermediate"></td></tr>
-      <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="not sure"
+                name="interest"
+                value="not sure"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Which best describes your experience level? </label></td>
+          </tr>
+          <tr>
+            <td><sub-label>Beginner:</sub-label></td>
+            <td>
+              <input
+                type="radio"
+                id="beginner"
+                name="experience"
+                value="beginner"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><sub-label>Intermediate:</sub-label></td>
+            <td>
+              <input
+                type="radio"
+                id="intermediate"
+                name="experience"
+                value="intermediate"
+              />
+            </td>
+          </tr>
+          <tr>
             <td><sub-label>Advanced:</sub-label></td>
-            <td><input type="radio" id="advanced" name="experience" value="advanced"></td></tr>
-    </table>
-    <br>
-      <button type="submit">Submit</button>
-    </form>
+            <td>
+              <input
+                type="radio"
+                id="advanced"
+                name="experience"
+                value="advanced"
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <button id="submit" type="submit">Submit</button>
+      </form>
     </div>
+  </body>
+
   <footer>
     <div
       class="footer p-6 has-background-black has-text-centered has-text-white"
