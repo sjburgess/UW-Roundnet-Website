@@ -1,10 +1,4 @@
-// document.querySelector("#locations").addEventListener("click", (event) => {
-//     ddiv.innerHTML = ` <main>
-//     <div class="main1">
-//       <h1 class=" m-6 box has-background-success-10 has-text-white has-text-centered is-size-4">
-//         FaunaFind currently hosts animal information from three states in the US, whith hopes to grow in the future. Please see each state for a few select inhabitant species.
-//       </h1>
-//     </div>
+console.log(firebase);
 let backing = document.querySelector("#backing");
 
 document.querySelector("#board").addEventListener("click", (event) => {
@@ -197,90 +191,174 @@ document.querySelector("#about").addEventListener("click", (event) => {
   </div>`;
 });
 
-document.querySelector("#form").addEventListener("click", (event) => {
+// Render the form on the "#form" click
+document.querySelector("#form").addEventListener("click", () => {
   backing.innerHTML = ` 
-<form>
-      <h1>Interest Form</h1>
-      <br>
-      <table>
-      <tr>
-        <td><label>Name:</label></td>
-        <td><input type="text" , id="name" , placeholder="Enter your name" required/></td>
-      </tr>
-      <tr>
-        <td><label>Email:</label></td>
-        <td><input type="email" , placeholder="Enter your email" required /></td>
-      </tr>
-      <tr>
-        <td><label>Year:</label></td>
-        <td>
-        <select name="year" id="year">
-          <option value="" disabled selected>Select</option>
-          <option value="Freshman">Freshman</option>
-          <option value="Sophomore">Sophomore</option>
-          <option value="Junior">Junior</option>
-          <option value="Senior">Senior</option>
-          <option value="Grad Student">Grad Student</option>
-        </select>
-      </td>
-      </tr>
-      <tr>
-        <td><label>What are you interested in attending? </label> </td> 
-      </tr>
-      <tr>
-        <td><sub-label>Practice:</sub-label></td>
-        <td><input type="checkbox" id="practice" name="interest" value="practice"></td></tr>
-      <tr>
-        <td><sub-label>Tournaments:</sub-label></td>
-          <td><input type="checkbox" id="tournaments" name="interest" value="tournaments"></td></tr>
-      <tr>
-            <td><sub-label>Not sure:</sub-label></td>
-            <td><input type="checkbox" id="not sure" name="interest" value="not sure"></td></tr>
-      <tr>
-        <td><label>Which best describes your experience level? </label> </td> 
-      </tr>
-      <tr>
-        <td><sub-label>Beginner:</sub-label></td>
-        <td><input type="radio" id="beginner" name="experience" value="beginner"></td></tr>
-      <tr>
-        <td><sub-label>Intermediate:</sub-label></td>
-          <td><input type="radio" id="intermediate" name="experience" value="intermediate"></td></tr>
-      <tr>
-            <td><sub-label>Advanced:</sub-label></td>
-            <td><input type="radio" id="advanced" name="experience" value="advanced"></td></tr>
-    </table>
-    <br>
-      <button type="submit">Submit</button>
-    </form>`;
+    <form>
+        <h1>Interest Form</h1>
+        <br />
+        <table>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="year">Year:</label></td>
+            <td>
+              <select name="year" id="year" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Freshman">Freshman</option>
+                <option value="Sophomore">Sophomore</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+                <option value="Grad Student">Grad Student</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>What are you interested in attending? </label></td>
+          </tr>
+          <tr>
+            <td><label for="practice">Practice:</label></td>
+            <td>
+              <input
+                type="checkbox"
+                id="practice"
+                name="interest"
+                value="practice"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tournaments">Tournaments:</label></td>
+            <td>
+              <input
+                type="checkbox"
+                id="tournaments"
+                name="interest"
+                value="tournaments"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="not-sure">Not sure:</label></td>
+            <td>
+              <input
+                type="checkbox"
+                id="not-sure"
+                name="interest"
+                value="not sure"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Which best describes your experience level? </label></td>
+          </tr>
+          <tr>
+            <td><label for="beginner">Beginner:</label></td>
+            <td>
+              <input
+                type="radio"
+                id="beginner"
+                name="experience"
+                value="beginner"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="intermediate">Intermediate:</label></td>
+            <td>
+              <input
+                type="radio"
+                id="intermediate"
+                name="experience"
+                value="intermediate"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="advanced">Advanced:</label></td>
+            <td>
+              <input
+                type="radio"
+                id="advanced"
+                name="experience"
+                value="advanced"
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <button id="submit" type="button">Submit</button>
+      </form>`;
+
+  // Add event listener for the submit button
+  document.querySelector("#submit").addEventListener("click", async (event) => {
+    // Collect form data
+    let name = document.querySelector("#name").value;
+    let email = document.querySelector("#email").value;
+    let year = document.querySelector("#year").value;
+
+    // Gather selected interests
+    let interests = Array.from(
+      document.querySelectorAll("input[name='interest']:checked")
+    ).map((checkbox) => checkbox.value);
+
+    // Get selected experience level
+    let experience = document.querySelector(
+      "input[name='experience']:checked"
+    )?.value;
+
+    // Basic validation
+    if (!name || !email || !year || !experience) {
+      alert("Please fill in all fields!");
+      return;
+    }
+
+    // Prepare the data to be sent to Firebase
+    const formData = {
+      name,
+      email,
+      year,
+      interests,
+      experience,
+    };
+
+    try {
+      // Send data to Firebase Firestore
+      await db.collection("interest_forms").add(formData);
+
+      // Success feedback
+      alert("Your interest form has been submitted successfully!");
+
+      // Optionally reset the form
+      document.querySelector("form").reset();
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      alert("Something went wrong. Please try again.");
+    }
+  });
 });
 
-document.querySelector("#members").addEventListener("click", (event) => {
-  backing.innerHTML = `<div>
-</div>`;
-});
-
-document.querySelector("#submit").addEventListener("click", () => {
-  let name = document.querySelector("#name").value;
-  let email = document.querySelector("#email").value;
-  let year = document.querySelector("#year").value;
-  let interests = Array.from(
-    document.querySelectorAll("input[name='interest']:checked")
-  ).map((checkbox) => checkbox.value);
-  let experience = document.querySelector(
-    "input[name='experience']:checked"
-  ).value;
-
-  let member = {
-    name: name,
-    email: email,
-    year: year,
-    interest: interests,
-    experience: experience,
-  };
-  // save member into database
-  db.collection("mypeople")
-    .add(member)
-    .then(() => {
-      alert("New member added!");
-    });
+// Reset section when "#members" is clicked
+document.querySelector("#members").addEventListener("click", () => {
+  backing.innerHTML = `<div></div>`;
 });
