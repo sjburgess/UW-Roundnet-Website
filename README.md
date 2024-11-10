@@ -106,8 +106,8 @@ Day 7:
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* Confirmed with client which users would have access to edit calendar events.  
-  - *What are you planning to do today?* Create a new google calendar and add appropriate users. 
+  - *What did you do yesterday?* Met with team members to discuss diagrams.   
+  - *What are you planning to do today?* Complete half of the activity diagrams. 
   - *Any problems?* No issues.
 
 ---
@@ -140,8 +140,8 @@ Day 7:
   - *Any problems? No issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* I pulled the embed link from google calendar and inserted it on the calendar tab. 
-  - *What are you planning to do today?* Finalizing formatting for the calendar tab. 
+  - *What did you do yesterday?* Finished the activity diagrams for create, delete, and update activities. 
+  - *What are you planning to do today?* Review milestone deliverable. 
   - *Any problems?* No problems. 
 
 -------------------------------------------------------------
