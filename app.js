@@ -359,6 +359,79 @@ document.querySelector("#form").addEventListener("click", () => {
 });
 
 // Reset section when "#members" is clicked
-document.querySelector("#members").addEventListener("click", () => {
-  backing.innerHTML = `<div></div>`;
+document.querySelector("#members").addEventListener("click", async () => {
+  const backing = document.querySelector("#backing"); // Target the specific div for content update
+
+  // Clear the content inside the backing div
+  backing.innerHTML = ""; // This clears the previous content inside #backing
+
+  // Create a container div for the submissions
+  const containerDiv = document.createElement("div");
+  containerDiv.style.maxWidth = "100%"; // Set to take up the full width of the screen
+  containerDiv.style.margin = "0 auto"; // Center the container
+  containerDiv.style.padding = "20px"; // Padding around the content
+  containerDiv.style.fontSize = "14px"; // Slightly smaller font for readability
+  containerDiv.style.boxSizing = "border-box"; // Ensure padding is included in the width
+  containerDiv.style.paddingBottom = "30px"; // Add space at the bottom to avoid sticking
+
+  try {
+    // Get all submissions from Firebase
+    const snapshot = await db.collection("interest_forms").get();
+
+    snapshot.forEach((doc) => {
+      const data = doc.data();
+
+      // Create a div for each submission entry
+      const memberDiv = document.createElement("div");
+      memberDiv.style.marginBottom = "20px"; // Add space between submissions
+      memberDiv.style.display = "flex"; // Use flexbox for row layout
+      memberDiv.style.flexWrap = "nowrap"; // Prevent wrapping of items
+      memberDiv.style.justifyContent = "space-between"; // Space the data out across the page
+      memberDiv.style.width = "100%"; // Ensure the member div takes full width of the screen
+
+      // Create each field and display them horizontally
+      const createDataField = (label, value) => {
+        const fieldDiv = document.createElement("div");
+        fieldDiv.style.display = "flex";
+        fieldDiv.style.flexDirection = "row";
+        fieldDiv.style.alignItems = "center";
+        fieldDiv.style.marginBottom = "10px"; // Space between fields
+        fieldDiv.style.flex = "1 1 20%"; // Set each field to take 20% of the row
+
+        const labelElem = document.createElement("strong");
+        labelElem.textContent = label + ": ";
+        labelElem.style.marginRight = "10px"; // Space between label and value
+        labelElem.style.color = "white"; // Ensure label is white
+
+        const valueElem = document.createElement("span");
+        valueElem.textContent = value;
+        valueElem.style.flex = "1"; // Make value take the remaining space
+        valueElem.style.color = "white"; // Ensure value is white
+        valueElem.style.marginRight = "20px"; // Add two spaces between text instances
+
+        fieldDiv.appendChild(labelElem);
+        fieldDiv.appendChild(valueElem);
+
+        return fieldDiv;
+      };
+
+      // Append the data fields to the member div in one row
+      memberDiv.appendChild(createDataField("Name", data.name));
+      memberDiv.appendChild(createDataField("Email", data.email));
+      memberDiv.appendChild(createDataField("Year", data.year));
+      memberDiv.appendChild(createDataField("Experience", data.experience));
+      memberDiv.appendChild(
+        createDataField("Interests", data.interests.join(", "))
+      );
+
+      // Append the new div to the container
+      containerDiv.appendChild(memberDiv);
+    });
+
+    // Append the container div (with all submissions) to the #backing div
+    backing.appendChild(containerDiv);
+  } catch (error) {
+    console.error("Error fetching members: ", error);
+    alert("Something went wrong while loading member data.");
+  }
 });
