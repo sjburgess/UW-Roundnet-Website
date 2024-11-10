@@ -91,9 +91,9 @@ Day 7:
   - *Any problems? No problems
 
 - **Basil:**
-  - *What did you do yesterday? I added a footer to match formatting of the title and inform users of intellectual property rights* 
-  - *What are you planning to do today? I plan to re-learn how to link pages* 
-  - *Any problems? No problems today.* 
+  - *What did you do yesterday? I began using JS to compile a single page app with the pre-configured navbar pages* 
+  - *What are you planning to do today? I plan to complete writing the code for the single page app and fixed bugs* 
+  - *Any problems? No problems* 
 
 - **Ian:**
   - *What did you do yesterday? I created the Trello board tasks that will be completed over the sprint* 
@@ -125,8 +125,8 @@ Day 7:
      - *Any problems?* No problems
 
 - **Basil:**
-  - *What did you do yesterday? I finished linking each separate HTML page to the navbar buttons.* 
-  - *What are you planning to do today? I plan to make edits to each HTML page to ensure formatting is consistent between pages.* 
+  - *What did you do yesterday? I made slight formatting adjustments: adjusted the background of the title page and footer to match the black background of the graphic and edited the margin of the footer to remove unwanted white space* 
+  - *What are you planning to do today? I plan to make edits to each page to enhance readability with font sized* 
   - *Any problems? No problems.* 
 
 - **Ian:**
