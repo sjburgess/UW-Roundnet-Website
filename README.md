@@ -177,8 +177,8 @@ Day 7:
   - *Any problems? No questions or issues yet.*
 
 - **Mitchell:**
-  - *What did you do yesterday? I started working on getting the headshots for the board members page.
-  - *What are you planning to do today? I am planning on obtaining the information necessary to create the board members page.
+  - *What did you do yesterday? I created the member submissions page and created a backing for it.
+  - *What are you planning to do today? I am planning on starting on gettign the member submissions page functional.
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
@@ -211,8 +211,8 @@ Day 7:
   - *Any problems? No issues.*
 
 - **Mitchell:**
-  - *What did you do yesterday? I was away for the weekend so I did not get a chance to complete any work for the project.
-  - *What are you planning to do today? I am planning on finishing up my work on the Board Members page.
+  - *What did you do yesterday? I debugged the interest form page and linked it with firebase.
+  - *What are you planning to do today? I am planning on finishing up my work on the member submissions page.
   - *Any problems? No issues so far.
 
 - **Lucas:**
