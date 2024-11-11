@@ -99,8 +99,8 @@ Day 7:
   - *Any problems? No problems* 
 
 - **Ian:**
-  - *What did you do yesterday? I created the Trello board tasks that will be completed over the sprint* 
-  - *What are you planning to do today? Today I am planning on taking a screenshot of the burndown chart* 
+  - *What did you do yesterday? I formatted the burndown chart for our sprint* 
+  - *What are you planning to do today? Today I am planning on creating the collections and fields for our firebase* 
   - *Any problems? No questions or issues yet.*
 
 - **Mitchell:**
@@ -133,8 +133,8 @@ Day 7:
   - *Any problems? No problems.* 
 
 - **Ian:**
-  - *What did you do yesterday? Today I finished screenshotting the burndown chart
-  - *What are you planning to do today? Today I will help update the readme file for submission*
+  - *What did you do yesterday? I finished the collections and fields for submission
+  - *What are you planning to do today? Today I will add the burndown screenshots to the github page*
   - *Any problems? No issues.*
 
 - **Mitchell:**
