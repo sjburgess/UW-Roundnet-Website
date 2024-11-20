@@ -100,18 +100,18 @@ r_e("signin_form").addEventListener("submit", (e) => {
   let password = r_e("password_").value;
 
   auth
-    .signInWithEmailAndPassword(email, pass)
+    .signInWithEmailAndPassword(email, password)
     .then((user) => {
       // reset the log in form
 
       configure_message_bar("You are now logged in");
 
       // hide the modal
-      r_e("login_modal").classList.remove("is-active");
+      r_e("signin_modal").classList.remove("is-active");
     })
     .catch((error) => {
       configure_message_bar("Incorrect email or password, please try again!");
-      r_e("login_modal").classList.remove("is-active");
+      r_e("signin_modal").classList.remove("is-active");
     });
 });
 
