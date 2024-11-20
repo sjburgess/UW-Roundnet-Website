@@ -130,9 +130,27 @@
       sub-label {
         margin-left: 15px;
       }
+      .subtitle2 {
+        display: flex; /* Use flexbox to control layout */
+        justify-content: flex-end; /* Push content to the right */
+        gap: 1rem; /* Optional: Adds spacing between buttons */
+      }
+
+      .subtitle3 a:hover {
+        background-color: #721410; /* Light red on hover */
+      }
+      .subtitle a:hover {
+        background-color: #721410; /* Light red on hover */
+      }
     </style>
   </head>
-  <body class="blackbg pt-6">
+  <body class="blackbg pt-3">
+    <div>
+      <div class="grid columns subtitle2 subtitle3">
+        <a class="has-text-white m-6" href="index.html">Sign Up</a>
+        <a class="subtitle2 has-text-white m-6" href="index.html">Sign Up</a>
+      </div>
+    </div>
     <h1 class="title">
       <!-- <div class="has-text-centered">
         <p class="has-text-black">Badger Roundnet UW</p>
@@ -149,7 +167,7 @@
 
     <nav>
       <div>
-        <div class="grid columns is-centered has-text-centered">
+        <div class="grid columns is-centered has-text-centered subtitle3">
           <a
             class="subtitle has-text-white m-6 has-text-centered"
             href="index.html"
