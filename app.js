@@ -1,6 +1,128 @@
 console.log(firebase);
 let backing = document.querySelector("#backing");
 
+let signupbtn = document.querySelector("#signupbtn");
+let signup_modal = document.querySelector("#signup_modal");
+let signup_modalbg = document.querySelector("#signup_modalbg");
+
+let signinbtn = document.querySelector("#signinbtn");
+let signin_modal = document.querySelector("#signin_modal");
+let signin_modalbg = document.querySelector("#signin_modalbg");
+
+// sign-up modal link
+signupbtn.addEventListener("click", () => {
+  signup_modal.classList.add("is-active");
+});
+
+signup_modalbg.addEventListener("click", () => {
+  signup_modal.classList.remove("is-active");
+});
+
+// signin modal link
+signinbtn.addEventListener("click", () => {
+  signin_modal.classList.add("is-active");
+});
+
+signin_modalbg.addEventListener("click", () => {
+  signin_modal.classList.remove("is-active");
+});
+
+function r_e(id) {
+  return document.querySelector(`#${id}`);
+}
+
+function configure_message_bar(msg) {
+  r_e("message_bar").innerHTML = msg;
+
+  // show the message bar
+  r_e("message_bar").classList.remove("is-hidden");
+
+  // hide the message bar again in 3 seconds and clear its content
+  setTimeout(() => {
+    r_e("message_bar").classList.add("is-hidden");
+    r_e("message_bar").innerHTML = "";
+  }, 3000);
+}
+// user sign up
+
+r_e("signup_form").addEventListener("submit", (e) => {
+  // prevent page from auto refresh
+  e.preventDefault();
+
+  // capture the user email and password
+  let email = r_e("email").value;
+  let password = r_e("password").value;
+
+  // finish user authentication
+
+  auth.createUserWithEmailAndPassword(email, password).then(() => {
+    // notify user that sign up was successfull
+
+    configure_message_bar(`user ${auth.currentUser.email} has been created`);
+
+    // hide the modal
+    r_e("signup_modal").classList.remove("is-active");
+
+    // clear the sign up form
+    r_e("signup_form").reset();
+  });
+
+  // check
+  // console.log(email, pass);
+
+  // console.log("form submitted");
+});
+
+// onauthstatechanged
+
+auth.onAuthStateChanged((user) => {
+  if (user) {
+    r_e("user_email").innerHTML = `logged in as ${auth.currentUser.email}`;
+    // configure_navbar(auth.currentUser.email);
+    // r_e("sub_block").classList.add("is-hidden");
+    // r_e("sub_block").classList.remove("is-active");
+  } else {
+    // alert("no current user");
+    r_e("user_email").innerHTML = "";
+    // configure_navbar();
+    // r_e("sub_block").classList.remove("is-hidden");
+    // r_e("sub_block").classList.add("is-active");
+  }
+});
+
+// sign in
+
+r_e("signin_form").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // find the email and pass from the form
+  let email = r_e("email_").value;
+  let password = r_e("password_").value;
+
+  auth
+    .signInWithEmailAndPassword(email, pass)
+    .then((user) => {
+      // reset the log in form
+
+      configure_message_bar("You are now logged in");
+
+      // hide the modal
+      r_e("login_modal").classList.remove("is-active");
+    })
+    .catch((error) => {
+      configure_message_bar("Incorrect email or password, please try again!");
+      r_e("login_modal").classList.remove("is-active");
+    });
+});
+
+// sign out
+r_e("signoutbtn").addEventListener("click", () => {
+  auth.signOut().then(() => {
+    // display a message on the message bar indicating user signed out
+    configure_message_bar("You are now logged out!");
+  });
+});
+
 document.querySelector("#board").addEventListener("click", (event) => {
   backing.innerHTML = ` <div id="backing" class="container p-6">
   <p class="title has-text-white has-text-centered">
