@@ -617,7 +617,7 @@ document.querySelector("#userstatus").addEventListener("click", () => {
       let html = ``;
       mydocs.forEach((d) => {
         html += `<p class="pl-5 has-text-white">${d.id}`;
-        html += `<button class="ml-6 has-text-white has-background-black" id="${d.id}" onclick="make_admin('${d.id}')">Make Admin</button></p>`;
+        html += `<button class="blackbutton ml-6 has-text-white " id="${d.id}" onclick="make_admin('${d.id}')">Make Admin</button></p>`;
       });
       r_e("registered_users").innerHTML = html;
     });
@@ -633,7 +633,7 @@ document.querySelector("#userstatus").addEventListener("click", () => {
         // we want to make sure that current user can't change their own status .. they should remain admin at all times
         if (d.id != auth.currentUser.email)
           html += `<p class="has-text-white">${d.id}`;
-        html += `<button id="${d.id}" class="has-background-black ml-6 has-text-white" onclick="make_regular_user('${d.id}')">Make Regular User</button></p>`;
+        html += `<button id="${d.id}" class="blackbutton ml-6 has-text-white" onclick="make_regular_user('${d.id}')">Make Regular User</button></p>`;
       });
       r_e("admin_users").innerHTML = html;
     });
