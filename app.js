@@ -561,50 +561,32 @@ document.querySelector("#members").addEventListener("click", async () => {
   }
 });
 
-// all non-admin users (column 3)
-function all_users(mode) {
-  // we know mode can be either 'edit', 'view', or '0'
-  // if view mode, only a list of users is shown
-  // if edit mode, you can change the user roles
-  // if 0, don't show any user details - user isn't authenticated
-
-  // if (mode == 0) {
-  //   // don't show any user data
-  //   r_e("registered_users").innerHTML = "";
-  //   r_e("admin_users").innerHTML = "";
-  //   // exit the function and don't run the rest of the code
-  //   return;
-  // }
-
-  // fill the 3rd column - non admin users
+function make_admin(id) {
   db.collection("users")
-    .where("admin", "==", 0)
-    .get()
-    .then((data) => {
-      mydocs = data.docs;
-      let html = ``;
-      mydocs.forEach((d) => {
-        html += `<p>${d.id}</p>`;
-        // if (mode == "edit")
-        //   html += `<button id="${d.id}" onclick="make_admin('${d.id}')">Make Admin</button></p>`;
-      });
-      r_e("registered_users").innerHTML = html;
+    .doc(id)
+    .set({
+      admin: 1,
+    })
+    .then(() => {
+      // Call configure_message_bar to update the message bar after changing the status
+
+      // Optionally reload the page after configuring the message bar
+      configure_message_bar("admin status updated");
+    })
+    .catch((error) => {
+      console.error("Error updating user to admin: ", error);
     });
+}
 
-  // fill the 4th column - Admin users
+function make_regular_user(id) {
   db.collection("users")
-    .where("admin", "==", 1)
-    .get()
-    .then((data) => {
-      mydocs = data.docs;
-      let html = ``;
-      mydocs.forEach((d) => {
-        // we want to make sure that current user can't change their own status .. they should remain admin at all times
-        if (d.id != auth.currentUser.email) html += `<p>${d.id}</p>`;
-        // if (mode == "edit" && d.id != auth.currentUser.email)
-        //   html += `<button id="${d.id}" onclick="make_regular_user('${d.id}')">Make Regular User</button></p>`;
-      });
-      r_e("admin_users").innerHTML = html;
+    .doc(id)
+    .set({
+      admin: 0,
+    })
+    .then(() => {
+      // Reload the page after updating the status
+      configure_message_bar("Admin status updated!");
     });
 }
 
@@ -622,7 +604,7 @@ document.querySelector("#userstatus").addEventListener("click", () => {
       r_e("registered_users").innerHTML = html;
     });
 
-  // fill the 4th column - Admin users
+  // Admin users
   db.collection("users")
     .where("admin", "==", 1)
     .get()
@@ -630,9 +612,7 @@ document.querySelector("#userstatus").addEventListener("click", () => {
       mydocs = data.docs;
       let html = ``;
       mydocs.forEach((d) => {
-        // we want to make sure that current user can't change their own status .. they should remain admin at all times
-        if (d.id != auth.currentUser.email)
-          html += `<p class="has-text-white">${d.id}`;
+        html += `<p class="has-text-white">${d.id}`;
         html += `<button id="${d.id}" class="blackbutton ml-6 has-text-white" onclick="make_regular_user('${d.id}')">Make Regular User</button></p>`;
       });
       r_e("admin_users").innerHTML = html;
@@ -642,13 +622,13 @@ document.querySelector("#userstatus").addEventListener("click", () => {
   <div class="column is-2"></div>
   <!-- Non-admin users -->
   <div class="column is-4 ">
-    <h1 class="title has-text-white">Non-Admin Users</h1>
+    <h1 class="p-6 title has-text-white">Non-Admin Users</h1>
     <div id="registered_users"></div>
   </div>
 
   <!-- admin users -->
   <div class="column is-4">
-    <h1 class="title has-text-white">Admin Users</h1>
+    <h1 class="p-6 title has-text-white">Admin Users</h1>
     <div id="admin_users"></div>
   </div>
   <div class="column is-2"></div>`;
