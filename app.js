@@ -55,7 +55,10 @@ r_e("signup_form").addEventListener("submit", (e) => {
 
   // finish user authentication
 
-  auth.createUserWithEmailAndPassword(email, password).then(() => {
+  auth.createUserWithEmailAndPassword(email, password).then((user) => {
+    db.collection("users").doc(user.user.email).set({
+      admin: 0,
+    });
     // notify user that sign up was successfull
 
     configure_message_bar(`user ${auth.currentUser.email} has been created`);
@@ -556,4 +559,11 @@ document.querySelector("#members").addEventListener("click", async () => {
     console.error("Error fetching members: ", error);
     alert("Something went wrong while loading member data.");
   }
+});
+
+document.querySelector("#userstatus").addEventListener("click", () => {
+  backing.innerHTML = `<div class="column has-text-white is-4">
+  <h1 class="title has-text-white">User Listing</h1>
+  <div id="registered_users"></div>
+</div>`;
 });
