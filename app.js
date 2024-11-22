@@ -657,9 +657,25 @@ auth.onAuthStateChanged((user) => {
   }
 });
 
+auth.onAuthStateChanged((user) => {
+  if (user) {
+    r_e("user_email").innerHTML = `logged in as ${auth.currentUser.email}`;
+    configure_navbar(auth.currentUser.email);
+    // r_e("sub_block").classList.add("is-hidden");
+    // r_e("sub_block").classList.remove("is-active");
+  } else {
+    // alert("no current user");
+    r_e("user_email").innerHTML = "";
+    configure_navbar();
+    // r_e("sub_block").classList.remove("is-hidden");
+    // r_e("sub_block").classList.add("is-active");
+  }
+});
+
 function configure_navbar(email) {
   let signedinlinks = document.querySelectorAll(".signedin");
   let signedoutlinks = document.querySelectorAll(".signedout");
+  let signedinadminlinks = document.querySelectorAll(".signedinadmin");
 
   if (email) {
     // when user is signed in show all the elements with the class signedin and hide all elements with class signedout
@@ -676,8 +692,24 @@ function configure_navbar(email) {
       link.classList.add("is-hidden");
     });
 
+    signedinadminlinks.forEach((link) => {
+      link.classList.add("is-hidden");
+    });
+
     signedoutlinks.forEach((link) => {
       link.classList.remove("is-hidden");
     });
   }
 }
+
+// function configure_navbar(email) {
+//   let signedinadminlinks = document.querySelectorAll(".signedinadmin");
+
+//   if (email) {
+//     // when user is signed in show all the elements with the class signedin and hide all elements with class signedout
+//   } else {
+//     signedinadminlinks.forEach((link) => {
+//       link.classList.add("is-hidden");
+//     });
+//   }
+// }
