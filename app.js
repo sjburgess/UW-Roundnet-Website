@@ -634,10 +634,9 @@ document.querySelector("#userstatus").addEventListener("click", () => {
   <div class="column is-2"></div>`;
 });
 
-let adminlinks = document.querySelectorAll(".signedinadmin");
-let signedoutlinks = document.querySelectorAll(".signedout");
-
 auth.onAuthStateChanged((user) => {
+  let adminlinks = document.querySelectorAll(".signedinadmin");
+
   if (user) {
     // console.log(user);
     // r_e("info").innerHTML = `<p>You are signed in as ${user.email} </p>`;
@@ -653,22 +652,32 @@ auth.onAuthStateChanged((user) => {
           adminlinks.forEach((link) => {
             link.classList.remove("is-hidden");
           });
-
-          signedoutlinks.forEach((link) => {
-            link.classList.add("is-hidden");
-          });
-        } else {
-          adminlinks.forEach((link) => {
-            link.classList.add("is-hidden");
-          });
-
-          signedoutlinks.forEach((link) => {
-            link.classList.remove("is-hidden");
-          });
         }
-
-        update_status(1, admin, user.uid, user.email);
       });
-  } else {
   }
 });
+
+function configure_navbar(email) {
+  let signedinlinks = document.querySelectorAll(".signedin");
+  let signedoutlinks = document.querySelectorAll(".signedout");
+
+  if (email) {
+    // when user is signed in show all the elements with the class signedin and hide all elements with class signedout
+
+    signedinlinks.forEach((link) => {
+      link.classList.remove("is-hidden");
+    });
+
+    signedoutlinks.forEach((link) => {
+      link.classList.add("is-hidden");
+    });
+  } else {
+    signedinlinks.forEach((link) => {
+      link.classList.add("is-hidden");
+    });
+
+    signedoutlinks.forEach((link) => {
+      link.classList.remove("is-hidden");
+    });
+  }
+}
