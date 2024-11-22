@@ -571,7 +571,7 @@ function make_admin(id) {
       // Call configure_message_bar to update the message bar after changing the status
 
       // Optionally reload the page after configuring the message bar
-      configure_message_bar("admin status updated");
+      configure_message_bar("Admin status updated!");
     })
     .catch((error) => {
       console.error("Error updating user to admin: ", error);
@@ -632,4 +632,43 @@ document.querySelector("#userstatus").addEventListener("click", () => {
     <div id="admin_users"></div>
   </div>
   <div class="column is-2"></div>`;
+});
+
+let adminlinks = document.querySelectorAll(".signedinadmin");
+let signedoutlinks = document.querySelectorAll(".signedout");
+
+auth.onAuthStateChanged((user) => {
+  if (user) {
+    // console.log(user);
+    // r_e("info").innerHTML = `<p>You are signed in as ${user.email} </p>`;
+    db.collection("users")
+      .doc(user.email)
+      .get()
+      .then((d) => {
+        // possible admin values are 0 or 1
+        // admin value of 1 means admin user. a value of 0 means no admin
+        let admin = d.data().admin;
+
+        if (admin == 1) {
+          adminlinks.forEach((link) => {
+            link.classList.remove("is-hidden");
+          });
+
+          signedoutlinks.forEach((link) => {
+            link.classList.add("is-hidden");
+          });
+        } else {
+          adminlinks.forEach((link) => {
+            link.classList.add("is-hidden");
+          });
+
+          signedoutlinks.forEach((link) => {
+            link.classList.remove("is-hidden");
+          });
+        }
+
+        update_status(1, admin, user.uid, user.email);
+      });
+  } else {
+  }
 });
