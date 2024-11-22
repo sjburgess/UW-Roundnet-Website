@@ -104,7 +104,7 @@ r_e("signin_form").addEventListener("submit", (e) => {
     .then((user) => {
       // reset the log in form
 
-      configure_message_bar("You are now logged in");
+      configure_message_bar("You are now signed in");
 
       // hide the modal
       r_e("signin_modal").classList.remove("is-active");
@@ -119,7 +119,7 @@ r_e("signin_form").addEventListener("submit", (e) => {
 r_e("signoutbtn").addEventListener("click", () => {
   auth.signOut().then(() => {
     // display a message on the message bar indicating user signed out
-    configure_message_bar("You are now logged out!");
+    configure_message_bar("You are now signed out!");
   });
 });
 
