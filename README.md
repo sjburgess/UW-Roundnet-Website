@@ -1,4 +1,4 @@
-# UW Roundnet Website Project - Sprint 3
+# UW Roundnet Website Project - Sprint 4
 
 ## Overview
 This project is for the creation of a website for UW Roundnet, a university sports club. The project is developed in an agile framework using Scrum for sprint-based development.
@@ -11,19 +11,22 @@ This project is for the creation of a website for UW Roundnet, a university spor
 
 
 ------------------------------------------------
+## User Stories 
 
-## User Stories
-1. **Interest Form:**  
-   “As a user, I want to submit my information to be included in any future notifications.”
-   
-2. **Club Information:**  
-   “As a user, I want to learn what UW Roundnet is about, so I can understand the purpose of the club.”
-   
-3. **Upcoming Tournaments:**  
-   “As a user, I want to know about upcoming tournaments, so I can plan to participate.”
-   
-4. **Board Members:**  
-   “As a user, I want to know who the club board members are, so I can reach out if needed.”
+1. Admin Functionality:
+"As an admin, I want to update board member information so that club data is accurate."
+
+2. User Management:
+"As an admin, I want to add or remove admins to ensure appropriate access control."
+
+3. Member Submissions:
+"As an admin, I want to hide or show the submissions page to manage visibility effectively."
+
+4. Authorization:
+"As a user, I want secure login and sign-up functionality connected to a database."
+
+5. Board Members Information:
+"As a user, I want to view board member details to know who leads the club."
 
 ---------------------------------------------
 
@@ -57,23 +60,17 @@ Day 7:
 ### Task Breakdown
 | Task                                    | Story Number | Duration (hrs) | Priority (1-10)  | Complexity      | Lead Person  |
 |-----------------------------------------|--------------|----------------|------------------|-----------------|--------------|
-| Fix colors in css                       | 1            |   2            |  10              |   Low           |  Mitchell    |
-| refactor site into single app platform  | 1            |   1            |  10              |   Med           |  Basil       |
-| Set up Trello board                     | 1            |   .5           |  10              |   Low           |  Ian         |
-| Fix logo background color               | 4            |   2            |  6               |   Low           |  Mitchell    |
-| Add additional nav page for data        | 4            |   3            |  6               |   High          |  Mitchell    |
-| Edit logo colors                        | 1            |   2            |  6               |   High          |  Lucas       |
-| Edit Interst Form Static Page           | 1            |   2            |  5               |   Med           |  Sarah       |
-| Describe Prototype & Functions          | 3            |   1            |  5               |   Low           |  Savanna     |
-| Describe core functional requirements   | 2            |   2            |  7               |   Low           |  Savanna     |
-| Create Contact Us Page                  | 5            |   1            |  6               |   Med           |  Savanna     |
-| Connect firestore                       | 2            |   1            |  6               |   Med           |  Sarah       |
-| Connect Interest form to firestore      | 1            |   1            |  8               |   Low           |  Sarah       |
-| Update user stories based on feedback   | 2            |   .5           |  8               |   Low           |  Lucas       |
-| Document team progress for README       | 2            |   3            |  10              |   Low           |  Savanna     |
-| Create burndown chart                   | 2            |   2            |  10              |   Med           |  Ian         |
-| burndown chart ss (Days 2, 5, 7)        | 2            |   1            |  10              |   Low           |  Ian         |
-
+| Add admin func to update board info     | 1            |   3            |  8               |   Med           |  Sarah       |
+| Create board member data collection     | 1            |   2            |  7               |   Low           |  Mitchell    |
+| Add admin func to mem submission pg     | 3            |   3            |  9               |   High          |  Ian         |
+| Add CRUD functions for board mem        | 1            |   4            |  8               |   High          |  Savanna     |
+| Add auth functionality                  | 4            |   3            |  8               |   Med           |  Basil       |
+| Connect user log-in/sign-up to FB       | 4            |   3            |  9               |   High          |  Lucas       |
+| hide submission pages                   | 3            |   2            |  6               |   Low           |  Sarah       |
+| Edit Insta footer                       | 5            |   1            |  5               |   Low           |  Mitchell    |
+| Add admin func for new admins           | 2            |   1            |  5               |   High          |  Basil       |
+| Create User collections                 | 2            |   3            |  9               |   Med           |  Ian         |
+| edit ReadME                             | 4            |   2            |  7               |   Med           |  Savanna     |
 
 
 
@@ -84,8 +81,8 @@ Day 7:
 
 ### Day 2: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?*  Yesterday I Compiled information between the milestone and Sprint and started drafting initial tasks to complete
-  - *What are you planning to do today?*  Today I plan to draft a re-structure of the READ ME, to accurately reflect sprint 3 progress 
+  - *What did you do yesterday?* I Started working on figuring out how to set up board member functions -- drafting plans and trying a couple methods to see which works best
+  - *What are you planning to do today?*  I plan to start implimenting some of the chosen methods
   - *Any problems?* No issues so far! 
 
 - **Sarah:**
@@ -118,8 +115,8 @@ Day 7:
 
 ### Day 7: Daily Scrum Meeting
 - **Savanna:**
-  - *What did you do yesterday?*  Yesterday I Finished descriptions needed for the sprint 3 functionality and requirements
-  - *What are you planning to do today?*  Today I plan to finaalize the Read Me structure for work showing our Sprint 3 progress
+  - *What did you do yesterday?*  Yesterday I worked on trying to get the nav bar centered 
+  - *What are you planning to do today?*  Today I plan on editing the README to reflect sprint 4 progress
   - *Any problems?* no issues! 
 
 - **Sarah:**
@@ -150,12 +147,12 @@ Day 7:
 -------------------------------------------------------------
 ## Sprint Review
 
-**What did you learn from this sprint?** We learned time management and collaboration skills the most. Now that we all have seperate things to be working on, the use of branches and further collaboration between each person to avoid conflict was neccessary. 
+**What did you learn from this sprint?** One of the biggest challenges we faced was managing our workload from other classes while staying on track with sprint tasks. Coding communication and the use of branches were also areas where we struggled; for example, there were moments when updates weren’t consistently shared across the team. To overcome this, we prioritized clear check-ins and relied on Trello and iMessage to align on goals. Additionally, some coding aspects of user authentication required more time than expected, so we adjusted by redistributing smaller tasks to balance the workload.
 
-**What did go well? Why?** We accomplished many tasks overall. Working on smaller ones first then tackling the larger ones was a successful strategy. Updating other members of the group if help is needed and rearrange work duties was also helpful. 
+**What did go well? Why?** We were able to finish all tasks on time and ensure that the user authentication was fully functional. Our team demonstrated strong commitment to meeting deadlines and worked collaboratively to fill in gaps when needed. Communication through iMessage and task tracking in Trello helped keep us organized and accountable. 
 
-**What didn’t go well? Why not?** Nothing deliberatly went bed, however, a few things within firestore and setting up for our data collections within firestore was initially confusing, integrating all of our pages into a single page was a slightly long process as well. 
+**What didn’t go well? Why not?** There are a few areas we’d like to improve: Branching and Code Communication: We need to better document and communicate what each team member is working on to avoid overlap or confusion. Time Management: While we met deadlines, better planning could reduce last-minute stress.
 
-**How can you make things better next time?** Integrating feedback from out last sprint quicker or immidiately after could make work towards future progress go faster. 
+**How can you make things better next time?** We’re planning to implement more regular updates and check-ins during the next sprint to address these challenges.
 
-**Are you satisfied with what you already completed?** Yes, this Sprint allowed us to fix some smaller things within making it into a single page app. We also updated our page to be where it needs to with firestore integration thorugh the interest form. 
+**Are you satisfied with what you already completed?** Yes, we completed a lot of work during this sprint. We had a few people review or give feedback on things which helped to streamline some of the proccesses. We feel that out site is in good standing and where able to polish up some areas that needed improvement. 
