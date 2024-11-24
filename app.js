@@ -527,12 +527,67 @@ document.querySelector("#members").addEventListener("click", async () => {
       deleteButton.style.color = "white";
       deleteButton.style.cursor = "pointer";
 
-      // Add button functionality (to be implemented as needed)
+      // Add button functionality for update
       updateButton.addEventListener("click", () => {
-        alert(`Update member: ${data.name}`);
-        // Add update logic here
+        // Open an editable form (you can create a modal or simply an inline form)
+        const updatedName = prompt("Update Name:", data.name);
+        const updatedEmail = prompt("Update Email:", data.email);
+        const updatedYear = prompt("Update Year:", data.year);
+        const updatedExperience = prompt("Update Experience:", data.experience);
+        const updatedInterests = prompt(
+          "Update Interests (comma separated):",
+          data.interests.join(", ")
+        );
+
+        if (
+          updatedName &&
+          updatedEmail &&
+          updatedYear &&
+          updatedExperience &&
+          updatedInterests
+        ) {
+          // Split interests into an array
+          const interestsArray = updatedInterests
+            .split(",")
+            .map((interest) => interest.trim());
+
+          // Update data in Firebase
+          db.collection("interest_forms")
+            .doc(doc.id)
+            .update({
+              name: updatedName,
+              email: updatedEmail,
+              year: updatedYear,
+              experience: updatedExperience,
+              interests: interestsArray,
+            })
+            .then(() => {
+              alert("Member updated successfully!");
+              // Optionally, update the UI without reloading
+              memberBox.querySelector(
+                "strong"
+              ).nextSibling.textContent = `Name: ${updatedName}`;
+              memberBox.querySelector(
+                "strong"
+              ).nextSibling.textContent = `Email: ${updatedEmail}`;
+              memberBox.querySelector(
+                "strong"
+              ).nextSibling.textContent = `Year: ${updatedYear}`;
+              memberBox.querySelector(
+                "strong"
+              ).nextSibling.textContent = `Experience: ${updatedExperience}`;
+              memberBox.querySelector(
+                "strong"
+              ).nextSibling.textContent = `Interests: ${updatedInterests}`;
+            })
+            .catch((error) => {
+              console.error("Error updating member:", error);
+              alert("Error updating member. Please try again.");
+            });
+        }
       });
 
+      // Add button functionality for delete
       deleteButton.addEventListener("click", async () => {
         if (confirm(`Are you sure you want to delete ${data.name}?`)) {
           try {
