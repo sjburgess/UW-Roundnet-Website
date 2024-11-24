@@ -441,6 +441,29 @@ document.querySelector("#form").addEventListener("click", () => {
   });
 });
 
+document.querySelector("#calendar").addEventListener("click", (event) => {
+  backing.innerHTML = `<div class="column">
+  <div class="container">
+    <section class="section">
+      <h2 class="title has-text-white has-text-centered">
+        Upcoming Events
+      </h2>
+      <p class="has-text-centered has-text-white">
+        Stay updated with our practice schedules, tournaments, and club
+        events. Check out the calendar below for all upcoming activities!
+      </p>
+      <!-- Google Calendar Embed -->
+      <iframe
+        class="calendar-embed"
+        src="https://calendar.google.com/calendar/embed?src=c_1ffc79a64e40945584d9a3ca4e3f3a0e16d4051df49c3a3be8664da1dc86e155%40group.calendar.google.com&ctz=America%2FChicago"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </section>
+  </div>
+</div>`;
+});
+
 // Reset section when "#members" is clicked
 document.querySelector("#members").addEventListener("click", async () => {
   const backing = document.querySelector("#backing"); // Target the specific div for content update
