@@ -464,6 +464,67 @@ document.querySelector("#calendar").addEventListener("click", (event) => {
 </div>`;
 });
 
+document.querySelector("#form").addEventListener("click", (event) => {
+  backing.innerHTML = `<div class="columns" id="backing">
+  <form>
+    <h1>Club Interest Form</h1>
+    <br />
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="year">Year:</label>
+      <select name="year" id="year">
+        <option value="" disabled selected>Select</option>
+        <option value="Freshman">Freshman</option>
+        <option value="Sophomore">Sophomore</option>
+        <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+        <option value="Grad Student">Grad Student</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>What are you interested in attending? </label>
+      <sub-label>
+        <input type="checkbox" name="interest" value="Practice" /> Practice
+      </sub-label>
+      <sub-label>
+        <input type="checkbox" name="interest" value="Tournaments" />
+        Tournaments
+      </sub-label>
+      <sub-label>
+        <input type="checkbox" name="interest" value="Not sure" /> Not sure
+      </sub-label>
+    </div>
+    <div class="form-group">
+      <label>Which best describes your experience level? </label>
+      <sub-label>
+        <input type="radio" name="experience" value="Beginner" /> Beginner
+      </sub-label>
+      <sub-label>
+        <input type="radio" name="experience" value="Intermediate" />
+        Intermediate
+      </sub-label>
+      <sub-label>
+        <input type="radio" name="experience" value="Advanced" /> Advanced
+      </sub-label>
+    </div>
+    <br />
+    <button id="submit" type="button">Submit</button>
+  </form>
+</div>`;
+});
+
 // Reset section when "#members" is clicked
 document.querySelector("#members").addEventListener("click", async () => {
   const backing = document.querySelector("#backing"); // Target the specific div for content update
