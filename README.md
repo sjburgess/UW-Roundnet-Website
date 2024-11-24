@@ -91,8 +91,8 @@ Day 7:
   - *Any problems? No problems
 
 - **Basil:**
-  - *What did you do yesterday? I began using JS to compile a single page app with the pre-configured navbar pages* 
-  - *What are you planning to do today? I plan to complete writing the code for the single page app and fixed bugs* 
+  - *What did you do yesterday? I used JS to update the user status page to show all users and their admin status. I began working on admin functionality for this page as well.* 
+  - *What are you planning to do today? I plan to complete writing the code for the admin functionality of the user status page.* 
   - *Any problems? No problems* 
 
 - **Ian:**
@@ -125,8 +125,8 @@ Day 7:
      - *Any problems?* No problems
 
 - **Basil:**
-  - *What did you do yesterday? I made slight formatting adjustments: adjusted the background of the title page and footer to match the black background of the graphic and edited the margin of the footer to remove unwanted white space* 
-  - *What are you planning to do today? I plan to make edits to each page to enhance readability with font sized* 
+  - *What did you do yesterday? I began adding admin functionality to ensure only admins could view and edit the member submissions and user status pages.* 
+  - *What are you planning to do today? I plan to finish coding the admin viewer allowance and make minor formatting adjustments for usability.* 
   - *Any problems? No problems.* 
 
 - **Ian:**
