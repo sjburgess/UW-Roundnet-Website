@@ -277,195 +277,7 @@ document.querySelector("#about").addEventListener("click", (event) => {
 // Render the form on the "#form" click
 document.querySelector("#form").addEventListener("click", () => {
   backing.innerHTML = ` 
-    <form>
-        <h1>Interest Form</h1>
-        <br />
-        <table>
-          <tr>
-            <td><label for="name">Name:</label></td>
-            <td>
-              <input
-                type="text"
-                id="name"
-                placeholder="Enter your name"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="email">Email:</label></td>
-            <td>
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="year">Year:</label></td>
-            <td>
-              <select name="year" id="year" required>
-                <option value="" disabled selected>Select</option>
-                <option value="Freshman">Freshman</option>
-                <option value="Sophomore">Sophomore</option>
-                <option value="Junior">Junior</option>
-                <option value="Senior">Senior</option>
-                <option value="Grad Student">Grad Student</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td><label>What are you interested in attending? </label></td>
-          </tr>
-          <tr>
-            <td><label for="practice">Practice:</label></td>
-            <td>
-              <input
-                type="checkbox"
-                id="practice"
-                name="interest"
-                value="practice"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="tournaments">Tournaments:</label></td>
-            <td>
-              <input
-                type="checkbox"
-                id="tournaments"
-                name="interest"
-                value="tournaments"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="not-sure">Not sure:</label></td>
-            <td>
-              <input
-                type="checkbox"
-                id="not-sure"
-                name="interest"
-                value="not sure"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label>Which best describes your experience level? </label></td>
-          </tr>
-          <tr>
-            <td><label for="beginner">Beginner:</label></td>
-            <td>
-              <input
-                type="radio"
-                id="beginner"
-                name="experience"
-                value="beginner"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="intermediate">Intermediate:</label></td>
-            <td>
-              <input
-                type="radio"
-                id="intermediate"
-                name="experience"
-                value="intermediate"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="advanced">Advanced:</label></td>
-            <td>
-              <input
-                type="radio"
-                id="advanced"
-                name="experience"
-                value="advanced"
-              />
-            </td>
-          </tr>
-        </table>
-        <br />
-        <button id="submit" type="button">Submit</button>
-      </form>`;
-
-  // Add event listener for the submit button
-  document.querySelector("#submit").addEventListener("click", async (event) => {
-    // Collect form data
-    let name = document.querySelector("#name").value;
-    let email = document.querySelector("#email").value;
-    let year = document.querySelector("#year").value;
-
-    // Gather selected interests
-    let interests = Array.from(
-      document.querySelectorAll("input[name='interest']:checked")
-    ).map((checkbox) => checkbox.value);
-
-    // Get selected experience level
-    let experience = document.querySelector(
-      "input[name='experience']:checked"
-    )?.value;
-
-    // Basic validation
-    if (!name || !email || !year || !experience) {
-      alert("Please fill in all fields!");
-      return;
-    }
-
-    // Prepare the data to be sent to Firebase
-    const formData = {
-      name,
-      email,
-      year,
-      interests,
-      experience,
-    };
-
-    try {
-      // Send data to Firebase Firestore
-      await db.collection("interest_forms").add(formData);
-
-      // Success feedback
-      alert("Your interest form has been submitted successfully!");
-
-      // Optionally reset the form
-      document.querySelector("form").reset();
-    } catch (error) {
-      console.error("Error submitting form: ", error);
-      alert("Something went wrong. Please try again.");
-    }
-  });
-});
-
-document.querySelector("#calendar").addEventListener("click", (event) => {
-  backing.innerHTML = `<div class="column">
-  <div class="container">
-    <section class="section">
-      <h2 class="title has-text-white has-text-centered">
-        Upcoming Events
-      </h2>
-      <p class="has-text-centered has-text-white">
-        Stay updated with our practice schedules, tournaments, and club
-        events. Check out the calendar below for all upcoming activities!
-      </p>
-      <!-- Google Calendar Embed -->
-      <iframe
-        class="calendar-embed"
-        src="https://calendar.google.com/calendar/embed?src=c_1ffc79a64e40945584d9a3ca4e3f3a0e16d4051df49c3a3be8664da1dc86e155%40group.calendar.google.com&ctz=America%2FChicago"
-        frameborder="0"
-        scrolling="no"
-      ></iframe>
-    </section>
-  </div>
-</div>`;
-});
-
-document.querySelector("#form").addEventListener("click", (event) => {
-  backing.innerHTML = `<div class="columns" id="backing">
+  <div class="columns" id="backing">
   <form>
     <h1>Club Interest Form</h1>
     <br />
@@ -522,6 +334,76 @@ document.querySelector("#form").addEventListener("click", (event) => {
     <br />
     <button id="submit" type="button">Submit</button>
   </form>
+</div>`;
+
+  // Add event listener for the submit button
+  document.querySelector("#submit").addEventListener("click", async (event) => {
+    // Collect form data
+    let name = document.querySelector("#name").value;
+    let email = document.querySelector("#email").value;
+    let year = document.querySelector("#year").value;
+
+    // Gather selected interests
+    let interests = Array.from(
+      document.querySelectorAll("input[name='interest']:checked")
+    ).map((checkbox) => checkbox.value);
+
+    // Get selected experience level
+    let experience = document.querySelector(
+      "input[name='experience']:checked"
+    )?.value;
+
+    // Basic validation
+    // if (!name || !email || !year) {
+    //   alert("Please fill in all fields!");
+    //   return;
+    // }
+
+    // Prepare the data to be sent to Firebase
+    const formData = {
+      name,
+      email,
+      year,
+      interests,
+      experience,
+    };
+
+    try {
+      // Send data to Firebase Firestore
+      await db.collection("interest_forms").add(formData);
+
+      // Success feedback
+      alert("Your interest form has been submitted successfully!");
+
+      // Optionally reset the form
+      document.querySelector("form").reset();
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      alert("Something went wrong. Please try again.");
+    }
+  });
+});
+
+document.querySelector("#calendar").addEventListener("click", (event) => {
+  backing.innerHTML = `<div class="column">
+  <div class="container">
+    <section class="section">
+      <h2 class="title has-text-white has-text-centered">
+        Upcoming Events
+      </h2>
+      <p class="has-text-centered has-text-white">
+        Stay updated with our practice schedules, tournaments, and club
+        events. Check out the calendar below for all upcoming activities!
+      </p>
+      <!-- Google Calendar Embed -->
+      <iframe
+        class="calendar-embed"
+        src="https://calendar.google.com/calendar/embed?src=c_1ffc79a64e40945584d9a3ca4e3f3a0e16d4051df49c3a3be8664da1dc86e155%40group.calendar.google.com&ctz=America%2FChicago"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </section>
+  </div>
 </div>`;
 });
 
