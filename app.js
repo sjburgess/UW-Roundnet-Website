@@ -492,12 +492,12 @@ document.querySelector("#members").addEventListener("click", async () => {
 
   // Create a container div for the submissions
   const containerDiv = document.createElement("div");
-  containerDiv.style.maxWidth = "100%"; // Set to take up the full width of the screen
-  containerDiv.style.margin = "0 auto"; // Center the container
+  containerDiv.style.display = "flex";
+  containerDiv.style.flexWrap = "wrap"; // Allow wrapping to new rows
+  containerDiv.style.gap = "20px"; // Add space between boxes
+  containerDiv.style.margin = "20px auto"; // Center the container and add margin
   containerDiv.style.padding = "20px"; // Padding around the content
-  containerDiv.style.fontSize = "14px"; // Slightly smaller font for readability
-  containerDiv.style.boxSizing = "border-box"; // Ensure padding is included in the width
-  containerDiv.style.paddingBottom = "30px"; // Add space at the bottom to avoid sticking
+  containerDiv.style.boxSizing = "border-box"; // Include padding in width calculations
 
   try {
     // Get all submissions from Firebase
@@ -506,33 +506,29 @@ document.querySelector("#members").addEventListener("click", async () => {
     snapshot.forEach((doc) => {
       const data = doc.data();
 
-      // Create a div for each submission entry
-      const memberDiv = document.createElement("div");
-      memberDiv.style.marginBottom = "20px"; // Add space between submissions
-      memberDiv.style.display = "flex"; // Use flexbox for row layout
-      memberDiv.style.flexWrap = "nowrap"; // Prevent wrapping of items
-      memberDiv.style.justifyContent = "space-between"; // Space the data out across the page
-      memberDiv.style.width = "100%"; // Ensure the member div takes full width of the screen
+      // Create a box for each submission
+      const memberBox = document.createElement("div");
+      memberBox.style.border = "1px solid white"; // Add border
+      memberBox.style.borderRadius = "8px"; // Rounded corners
+      memberBox.style.backgroundColor = "#333"; // Dark background
+      memberBox.style.color = "white"; // White text
+      memberBox.style.padding = "15px"; // Padding inside the box
+      memberBox.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)"; // Subtle shadow
+      memberBox.style.flex = "1 1 calc(33.333% - 20px)"; // Take 1/3 of the row minus the gap
+      memberBox.style.boxSizing = "border-box"; // Include padding in the size
 
-      // Create each field and display them horizontally
+      // Add content to the box
       const createDataField = (label, value) => {
         const fieldDiv = document.createElement("div");
-        fieldDiv.style.display = "flex";
-        fieldDiv.style.flexDirection = "row";
-        fieldDiv.style.alignItems = "center";
-        fieldDiv.style.marginBottom = "10px"; // Space between fields
-        fieldDiv.style.flex = "1 1 20%"; // Set each field to take 20% of the row
+        fieldDiv.style.marginBottom = "10px";
 
         const labelElem = document.createElement("strong");
         labelElem.textContent = label + ": ";
-        labelElem.style.marginRight = "10px"; // Space between label and value
-        labelElem.style.color = "white"; // Ensure label is white
+        labelElem.style.color = "#fff"; // White color for labels
 
         const valueElem = document.createElement("span");
         valueElem.textContent = value;
-        valueElem.style.flex = "1"; // Make value take the remaining space
-        valueElem.style.color = "white"; // Ensure value is white
-        valueElem.style.marginRight = "20px"; // Add two spaces between text instances
+        valueElem.style.color = "#ddd"; // Slightly lighter text for values
 
         fieldDiv.appendChild(labelElem);
         fieldDiv.appendChild(valueElem);
@@ -540,17 +536,64 @@ document.querySelector("#members").addEventListener("click", async () => {
         return fieldDiv;
       };
 
-      // Append the data fields to the member div in one row
-      memberDiv.appendChild(createDataField("Name", data.name));
-      memberDiv.appendChild(createDataField("Email", data.email));
-      memberDiv.appendChild(createDataField("Year", data.year));
-      memberDiv.appendChild(createDataField("Experience", data.experience));
-      memberDiv.appendChild(
+      // Append the data fields to the member box
+      memberBox.appendChild(createDataField("Name", data.name));
+      memberBox.appendChild(createDataField("Email", data.email));
+      memberBox.appendChild(createDataField("Year", data.year));
+      memberBox.appendChild(createDataField("Experience", data.experience));
+      memberBox.appendChild(
         createDataField("Interests", data.interests.join(", "))
       );
 
-      // Append the new div to the container
-      containerDiv.appendChild(memberDiv);
+      // Add Update and Delete buttons
+      const buttonContainer = document.createElement("div");
+      buttonContainer.style.display = "flex";
+      buttonContainer.style.justifyContent = "space-between"; // Space buttons apart
+      buttonContainer.style.marginTop = "10px";
+
+      const updateButton = document.createElement("button");
+      updateButton.textContent = "Update";
+      updateButton.style.padding = "8px 12px";
+      updateButton.style.border = "none";
+      updateButton.style.borderRadius = "4px";
+      updateButton.style.backgroundColor = "#4caf50"; // Green for update
+      updateButton.style.color = "white";
+      updateButton.style.cursor = "pointer";
+
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Delete";
+      deleteButton.style.padding = "8px 12px";
+      deleteButton.style.border = "none";
+      deleteButton.style.borderRadius = "4px";
+      deleteButton.style.backgroundColor = "#f44336"; // Red for delete
+      deleteButton.style.color = "white";
+      deleteButton.style.cursor = "pointer";
+
+      // Add button functionality (to be implemented as needed)
+      updateButton.addEventListener("click", () => {
+        alert(`Update member: ${data.name}`);
+        // Add update logic here
+      });
+
+      deleteButton.addEventListener("click", async () => {
+        if (confirm(`Are you sure you want to delete ${data.name}?`)) {
+          try {
+            await db.collection("interest_forms").doc(doc.id).delete();
+            alert(`${data.name} has been deleted.`);
+            memberBox.remove(); // Remove the box from the UI
+          } catch (error) {
+            console.error("Error deleting member: ", error);
+          }
+        }
+      });
+
+      buttonContainer.appendChild(updateButton);
+      buttonContainer.appendChild(deleteButton);
+
+      memberBox.appendChild(buttonContainer);
+
+      // Append the box to the container
+      containerDiv.appendChild(memberBox);
     });
 
     // Append the container div (with all submissions) to the #backing div
