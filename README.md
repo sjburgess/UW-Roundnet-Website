@@ -101,8 +101,8 @@ Day 7:
   - *Any problems? No questions or issues yet.*
 
 - **Mitchell:**
-  - *What did you do yesterday? I created the member submissions page and created a backing for it.
-  - *What are you planning to do today? I am planning on starting on gettign the member submissions page functional.
+  - *What did you do yesterday? I made the member submissions page display the user's in a more uniform format. I also linked the board members page with the databaes.
+  - *What are you planning to do today? I am planning on creating update and delete functions for the member submissions page.
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
@@ -135,8 +135,8 @@ Day 7:
   - *Any problems? No issues.*
 
 - **Mitchell:**
-  - *What did you do yesterday? I debugged the interest form page and linked it with firebase.
-  - *What are you planning to do today? I am planning on finishing up my work on the member submissions page.
+  - *What did you do yesterday? I added update and delete functionality for the member submissions page.
+  - *What are you planning to do today? I am planning on making sure the members submissions page will work under any circumstance.
   - *Any problems? No issues so far.
 
 - **Lucas:**
