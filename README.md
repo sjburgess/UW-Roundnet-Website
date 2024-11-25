@@ -93,8 +93,8 @@ Day 7:
   - *Any problems?* No issues so far! 
 
 - **Sarah:**
-  - *What did you do yesterday?*   Yesterday I did some research on what is best to include on interest forms
-  - *What are you planning to do today?*  Today I am going to do some research on html and css for forms
+  - *What did you do yesterday?*   Yesterday I worked with my team to figure out what to finalize for our project.
+  - *What are you planning to do today?*  Today I did some javascript and firebase updates to make sure everything was working.
   - *Any problems? No problems
 
 - **Basil:**
@@ -127,8 +127,8 @@ Day 7:
   - *Any problems?* no issues! 
 
 - **Sarah:**
-    - *What did you do yesterday?*  Yesterday, I started building the interest form page with html and css
-     - *What are you planning to do today?*    Today I am planning to finish building the form and ensure it looks right
+    - *What did you do yesterday?*  Yesterday, I updated the interest forms formatting to make it look more visually appealing.
+     - *What are you planning to do today?*    Today I am planning on checking over our html and ensuring everything is all set for submission.
      - *Any problems?* No problems
 
 - **Basil:**
