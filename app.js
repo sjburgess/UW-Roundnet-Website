@@ -592,10 +592,7 @@ function make_admin(id) {
       admin: 1,
     })
     .then(() => {
-      // Call configure_message_bar to update the message bar after changing the status
-
-      // Optionally reload the page after configuring the message bar
-      configure_message_bar("Admin status updated!");
+      alert("Admin Status Updated!");
     })
     .catch((error) => {
       console.error("Error updating user to admin: ", error);
@@ -609,8 +606,7 @@ function make_regular_user(id) {
       admin: 0,
     })
     .then(() => {
-      // Reload the page after updating the status
-      configure_message_bar("Admin status updated!");
+      alert("Admin Status Updated!");
     });
 }
 
