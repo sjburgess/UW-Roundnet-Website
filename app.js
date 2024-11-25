@@ -289,7 +289,7 @@ document.querySelector("#form").addEventListener("click", () => {
           <label for="email">Email:</label>
           <input
             type="email"
-            id="email"
+            id="emaill"
             placeholder="Enter your email"
             required
           />
@@ -342,7 +342,7 @@ document.querySelector("#form").addEventListener("click", () => {
   document.querySelector("#submit").addEventListener("click", async (event) => {
     // Collect form data
     let name = document.querySelector("#name").value;
-    let email = document.querySelector("#email").value;
+    let email = document.querySelector("#emaill").value;
     let year = document.querySelector("#year").value;
 
     // Gather selected interests
