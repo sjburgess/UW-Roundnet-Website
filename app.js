@@ -332,7 +332,9 @@ document.querySelector("#form").addEventListener("click", () => {
           </sub-label>
         </div>
         <br />
-        <button id="submit" type="button">Submit</button>
+        <div class="is-flex is-justify-content-center">
+          <button id="submit" type="button">Submit</button>
+        </div>
       </form>
     </div>`;
 
