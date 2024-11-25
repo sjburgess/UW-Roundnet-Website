@@ -619,7 +619,7 @@ document.querySelector("#userstatus").addEventListener("click", () => {
       let html = ``;
       mydocs.forEach((d) => {
         html += `<p class="pl-5 has-text-white">${d.id}`;
-        html += `<button class="blackbutton ml-6 has-text-white " id="${d.id}" onclick="make_admin('${d.id}')">Make Admin</button></p>`;
+        html += `<button class="blackbutton ml-6 has-text-white is-pulled-right " id="${d.id}" onclick="make_admin('${d.id}')">Make Admin</button></p>`;
       });
       r_e("registered_users").innerHTML = html;
     });
@@ -633,7 +633,7 @@ document.querySelector("#userstatus").addEventListener("click", () => {
       let html = ``;
       mydocs.forEach((d) => {
         html += `<p class="has-text-white">${d.id}`;
-        html += `<button id="${d.id}" class="blackbutton ml-6 has-text-white" onclick="make_regular_user('${d.id}')">Make Regular User</button></p>`;
+        html += `<button id="${d.id}" class="blackbutton ml-6 has-text-white is-pulled-right" onclick="make_regular_user('${d.id}')">Make Regular User</button></p>`;
       });
       r_e("admin_users").innerHTML = html;
     });
@@ -641,13 +641,13 @@ document.querySelector("#userstatus").addEventListener("click", () => {
   backing.innerHTML = `
   <div class="column is-2"></div>
   <!-- Non-admin users -->
-  <div class="column is-4 ">
+  <div class="column is-4 p-3 m-4">
     <h1 class="p-6 title has-text-white">Non-Admin Users</h1>
     <div id="registered_users"></div>
   </div>
 
   <!-- admin users -->
-  <div class="column is-4">
+  <div class="column is-4 p-3 m-4">
     <h1 class="p-6 title has-text-white">Admin Users</h1>
     <div id="admin_users"></div>
   </div>
