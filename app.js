@@ -277,7 +277,7 @@ document.querySelector("#about").addEventListener("click", (event) => {
 // Render the form on the "#form" click
 document.querySelector("#form").addEventListener("click", () => {
   backing.innerHTML = ` 
-  <div class="columns" id="backing">
+    <div class="column" id="backing">
       <form>
         <h1>Club Interest Form</h1>
         <br />
