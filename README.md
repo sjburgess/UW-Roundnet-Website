@@ -113,8 +113,8 @@ Day 7:
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* Met with team members to discuss diagrams.   
-  - *What are you planning to do today?* Complete half of the activity diagrams. 
+  - *What did you do yesterday?* Also started brainstorming board member update functionality from within the webpage.    
+  - *What are you planning to do today?* Try implementing update/delete buttons. 
   - *Any problems?* No issues.
 
 ---
@@ -147,7 +147,7 @@ Day 7:
   - *Any problems? No issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* Finished the activity diagrams for create, delete, and update activities. 
+  - *What did you do yesterday?* Met with Mitchell to review update and delete functionality.  
   - *What are you planning to do today?* Review milestone deliverable. 
   - *Any problems?* No problems. 
 
