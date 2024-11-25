@@ -12,18 +12,11 @@
     <style>
       #backing {
         background-color: #721410;
+        display: flex; /* Enables flexbox for the container */
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+        height: 100vh; /* Ensures the container fills the full viewport height */
       }
-      .logo {
-        width: 300px;
-        height: auto;
-      }
-
-      .roundnettitle {
-        width: 1110px;
-        display: flex;
-        justify-content: center;
-      }
-
       .logo {
         width: 300px;
         height: auto;
@@ -102,13 +95,18 @@
 
       form {
         background-color: white;
-        width: 35%;
         margin: 10px auto;
         padding: 20px 10px;
         border: 1px solid white;
         border-radius: 10px;
         font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+        width: 100%; /* Default width for smaller screens */
+        max-width: 500px; /* Limit the width for readability on larger screens */
+        box-sizing: border-box; /* Include padding in the element's width/height calculation */
       }
+
       label {
         display: block;
         margin-bottom: 8px;
