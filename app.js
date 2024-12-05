@@ -206,12 +206,12 @@ document.querySelector("#board").addEventListener("click", async () => {
             </div>
             ${
               isAdmin
-                ? `
+                ? ` 
                   <div style="display: flex; gap: 10px; margin-top: 10px;">
-                    <button class="update-button" data-id="${data.id}" style="padding: 8px 12px; border: none; border-radius: 4px; background-color: #4caf50; color: white; cursor: pointer;">
+                    <button class="update-button" data-id="${data.id}" style="padding: 12px 20px; font-size: 16px; width: auto; white-space: nowrap; border: none; border-radius: 4px; background-color: #4caf50; color: white; cursor: pointer; box-sizing: border-box;">
                       Update
                     </button>
-                    <button class="delete-button" data-id="${data.id}" style="padding: 8px 12px; border: none; border-radius: 4px; background-color: #f44336; color: white; cursor: pointer;">
+                    <button class="delete-button" data-id="${data.id}" style="padding: 12px 20px; font-size: 16px; width: auto; white-space: nowrap; border: none; border-radius: 4px; background-color: #f44336; color: white; cursor: pointer; box-sizing: border-box;">
                       Delete
                     </button>
                   </div>
@@ -226,7 +226,7 @@ document.querySelector("#board").addEventListener("click", async () => {
     // Add "Add Member" button for admins
     if (isAdmin) {
       backing.innerHTML += `
-        <button id="add-member-button" style="display: block; margin: 20px auto; padding: 10px 20px; border: none; border-radius: 8px; background-color: #2196f3; color: white; cursor: pointer;">
+        <button id="add-member-button" style="display: block; margin: 20px auto; padding: 12px 20px; font-size: 16px; width: auto; white-space: nowrap; border: none; border-radius: 8px; background-color: #2196f3; color: white; cursor: pointer; box-sizing: border-box;">
           Add Member
         </button>
       `;
