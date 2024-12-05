@@ -127,6 +127,8 @@ r_e("signoutbtn").addEventListener("click", () => {
 });
 
 document.querySelector("#board").addEventListener("click", async () => {
+  const backing = document.querySelector("#backing");
+
   // Clear existing content in #backing
   backing.innerHTML = `
     <div id="backing" class="container p-6">
@@ -137,61 +139,193 @@ document.querySelector("#board").addEventListener("click", async () => {
   `;
 
   try {
-    // Fetch all board members from Firebase
+    // Check if user is logged in
+    const currentUser = firebase.auth().currentUser;
+
+    // Fetch user document to verify admin status (email is used as doc id)
+    let isAdmin = false;
+    if (currentUser) {
+      console.log("Current User UID:", currentUser.uid);
+
+      // Fetch user document to verify admin status
+      const userDoc = await db.collection("users").doc(currentUser.email).get();
+      if (!userDoc.exists) {
+        console.error("User document not found.");
+        alert("No user record found.");
+        return;
+      }
+
+      const userData = userDoc.data();
+      console.log("User Data:", userData);
+
+      isAdmin = userData.admin === 1; // Admin check
+      console.log("Is Admin:", isAdmin);
+    } else {
+      console.log("User is not logged in.");
+    }
+
+    // Fetch all board members
     const snapshot = await db.collection("board_members").get();
 
-    if (!snapshot.empty) {
-      let boardMembers = [];
+    if (snapshot.empty) {
+      backing.innerHTML += `
+        <p class="has-text-white has-text-centered">No board members found.</p>
+      `;
+      return;
+    }
 
-      // Separate president from other members
-      snapshot.forEach((doc) => {
-        const data = doc.data();
-        if (data.Position.toLowerCase() === "president") {
-          boardMembers.unshift(data); // Place president first
-        } else {
-          boardMembers.push(data); // Add other members
-        }
-      });
+    let boardMembers = [];
 
-      // Iterate through sorted board members and display them
-      boardMembers.forEach((data) => {
-        // Create a vertical layout for each board member
-        const memberDiv = document.createElement("div");
-        memberDiv.className = "box mb-4"; // Box with margin for separation
-        memberDiv.style.backgroundColor = "#721410"; // Correct red background color
-        memberDiv.style.color = "white"; // White text for contrast
-        memberDiv.style.padding = "20px"; // Padding for visual spacing
-        memberDiv.style.borderRadius = "8px"; // Rounded corners for styling
-        memberDiv.style.width = "100%"; // Full width of the parent container
-        memberDiv.style.boxSizing = "border-box"; // Ensure padding is included in width
-        memberDiv.style.display = "block"; // Ensure each member is on a new line
+    // Sort and process board members
+    snapshot.forEach((doc) => {
+      const data = doc.data();
+      if (data.Position.toLowerCase() === "president") {
+        boardMembers.unshift({ id: doc.id, ...data }); // Place president first
+      } else {
+        boardMembers.push({ id: doc.id, ...data }); // Add other members
+      }
+    });
 
-        // Build the HTML structure for the member
-        memberDiv.innerHTML = `
+    // Generate board members UI
+    boardMembers.forEach((data) => {
+      backing.innerHTML += `
+        <div class="box mb-4" style="background-color: #721410; color: white; padding: 20px; border-radius: 8px; width: 100%; box-sizing: border-box;">
           <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
             <div style="margin-bottom: 20px;">
-              <img src="${data.Headshot}" alt="${data.Name}" class="custom-image" style="max-width: 150px; border-radius: 50%;" />
+              <img src="${data.Headshot}" alt="${
+        data.Name
+      }" class="custom-image" style="max-width: 150px; border-radius: 50%;" />
             </div>
             <div style="text-align: center;">
-              <p class="subtitle has-text-white" style="margin-bottom: 10px;">${data.Name} - ${data.Position}</p>
-              <p class="member-description has-text-white">${data.Description}</p>
+              <p class="subtitle has-text-white" style="margin-bottom: 10px;">${
+                data.Name
+              } - ${data.Position}</p>
+              <p class="member-description has-text-white">${
+                data.Description
+              }</p>
             </div>
+            ${
+              isAdmin
+                ? `
+                  <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <button class="update-button" data-id="${data.id}" style="padding: 8px 12px; border: none; border-radius: 4px; background-color: #4caf50; color: white; cursor: pointer;">
+                      Update
+                    </button>
+                    <button class="delete-button" data-id="${data.id}" style="padding: 8px 12px; border: none; border-radius: 4px; background-color: #f44336; color: white; cursor: pointer;">
+                      Delete
+                    </button>
+                  </div>
+                `
+                : ""
+            }
           </div>
-        `;
+        </div>
+      `;
+    });
 
-        // Append the member div to the #backing container
-        document.querySelector("#backing").appendChild(memberDiv);
+    // Add "Add Member" button for admins
+    if (isAdmin) {
+      backing.innerHTML += `
+        <button id="add-member-button" style="display: block; margin: 20px auto; padding: 10px 20px; border: none; border-radius: 8px; background-color: #2196f3; color: white; cursor: pointer;">
+          Add Member
+        </button>
+      `;
+    }
+
+    // Admin-specific functionality (buttons for update, delete, add)
+    if (isAdmin) {
+      console.log("Admin buttons active.");
+      document.querySelectorAll(".update-button").forEach((button) => {
+        button.addEventListener("click", (e) => {
+          const id = e.target.dataset.id;
+          const memberData = boardMembers.find((member) => member.id === id);
+
+          if (memberData) {
+            const updatedName = prompt("Update Name:", memberData.Name);
+            const updatedPosition = prompt(
+              "Update Position:",
+              memberData.Position
+            );
+            const updatedDescription = prompt(
+              "Update Description:",
+              memberData.Description
+            );
+
+            if (updatedName && updatedPosition && updatedDescription) {
+              db.collection("board_members")
+                .doc(id)
+                .update({
+                  Name: updatedName,
+                  Position: updatedPosition,
+                  Description: updatedDescription,
+                })
+                .then(() => {
+                  alert("Board member updated successfully!");
+                  document.querySelector("#board").click(); // Reload board members
+                })
+                .catch((error) => {
+                  console.error("Error updating member:", error);
+                  alert("Error updating member. Please try again.");
+                });
+            }
+          }
+        });
       });
-    } else {
-      // Display a message if no members are found
-      const noMembersMessage = document.createElement("p");
-      noMembersMessage.className = "has-text-white has-text-centered";
-      noMembersMessage.textContent = "No board members found.";
-      document.querySelector("#backing").appendChild(noMembersMessage);
+
+      document.querySelectorAll(".delete-button").forEach((button) => {
+        button.addEventListener("click", (e) => {
+          const id = e.target.dataset.id;
+          const memberData = boardMembers.find((member) => member.id === id);
+
+          if (
+            memberData &&
+            confirm(`Are you sure you want to delete ${memberData.Name}?`)
+          ) {
+            db.collection("board_members")
+              .doc(id)
+              .delete()
+              .then(() => {
+                alert(`${memberData.Name} has been deleted.`);
+                document.querySelector("#board").click(); // Reload board members
+              })
+              .catch((error) => {
+                console.error("Error deleting member: ", error);
+                alert("Error deleting member. Please try again.");
+              });
+          }
+        });
+      });
+
+      document
+        .getElementById("add-member-button")
+        .addEventListener("click", () => {
+          const name = prompt("Enter Name:");
+          const position = prompt("Enter Position:");
+          const description = prompt("Enter Description:");
+          const headshot = prompt("Enter Headshot URL:");
+
+          if (name && position && description && headshot) {
+            db.collection("board_members")
+              .add({
+                Name: name,
+                Position: position,
+                Description: description,
+                Headshot: headshot,
+              })
+              .then(() => {
+                alert("New board member added successfully!");
+                document.querySelector("#board").click(); // Reload board members
+              })
+              .catch((error) => {
+                console.error("Error adding new member:", error);
+                alert("Error adding new member. Please try again.");
+              });
+          }
+        });
     }
   } catch (error) {
-    console.error("Error fetching board members: ", error);
-    alert("Something went wrong while loading board member data.");
+    console.error("Error fetching board members or admin status:", error);
+    alert("An error occurred. Please try again.");
   }
 });
 
