@@ -235,6 +235,8 @@ document.querySelector("#board").addEventListener("click", async () => {
     // Admin-specific functionality (buttons for update, delete, add)
     if (isAdmin) {
       console.log("Admin buttons active.");
+
+      // Handle Update Button Click
       document.querySelectorAll(".update-button").forEach((button) => {
         button.addEventListener("click", (e) => {
           const id = e.target.dataset.id;
@@ -250,14 +252,25 @@ document.querySelector("#board").addEventListener("click", async () => {
               "Update Description:",
               memberData.Description
             );
+            const updatedHeadshot = prompt(
+              "Update Headshot URL:",
+              memberData.Headshot
+            ); // Prompt for new image URL
 
-            if (updatedName && updatedPosition && updatedDescription) {
+            if (
+              updatedName &&
+              updatedPosition &&
+              updatedDescription &&
+              updatedHeadshot
+            ) {
+              // Update Firestore with new values
               db.collection("board_members")
                 .doc(id)
                 .update({
                   Name: updatedName,
                   Position: updatedPosition,
                   Description: updatedDescription,
+                  Headshot: updatedHeadshot, // Update headshot URL
                 })
                 .then(() => {
                   alert("Board member updated successfully!");
@@ -267,11 +280,14 @@ document.querySelector("#board").addEventListener("click", async () => {
                   console.error("Error updating member:", error);
                   alert("Error updating member. Please try again.");
                 });
+            } else {
+              alert("All fields must be filled out.");
             }
           }
         });
       });
 
+      // Handle Delete Button Click
       document.querySelectorAll(".delete-button").forEach((button) => {
         button.addEventListener("click", (e) => {
           const id = e.target.dataset.id;
@@ -296,6 +312,7 @@ document.querySelector("#board").addEventListener("click", async () => {
         });
       });
 
+      // Handle Add Member Button Click
       document
         .getElementById("add-member-button")
         .addEventListener("click", () => {
