@@ -132,9 +132,17 @@ document.querySelector("#board").addEventListener("click", async () => {
   // Clear existing content in #backing
   backing.innerHTML = `
     <div id="backing" class="container p-6">
-      <p class="title has-text-white has-text-centered">
-        Meet Our Board Members
-      </p>
+      <div class="flex-container">
+        <p class="title has-text-white has-text-centered">
+          Meet Our Board Members
+        </p>
+      </div>
+      <div id="board-members" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+        <!-- Board Members will be inserted here -->
+      </div>
+      <div id="add-member-container" class="flex-container">
+        <!-- Add Member button will be inserted here -->
+      </div>
     </div>
   `;
 
@@ -168,7 +176,7 @@ document.querySelector("#board").addEventListener("click", async () => {
     const snapshot = await db.collection("board_members").get();
 
     if (snapshot.empty) {
-      backing.innerHTML += `
+      document.querySelector("#board-members").innerHTML += ` 
         <p class="has-text-white has-text-centered">No board members found.</p>
       `;
       return;
@@ -188,45 +196,40 @@ document.querySelector("#board").addEventListener("click", async () => {
 
     // Generate board members UI
     boardMembers.forEach((data) => {
-      backing.innerHTML += `
-        <div class="box mb-4" style="background-color: #721410; color: white; padding: 20px; border-radius: 8px; width: 100%; box-sizing: border-box;">
-          <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-            <div style="margin-bottom: 20px;">
-              <img src="${data.Headshot}" alt="${
+      document.querySelector("#board-members").innerHTML += `
+        <div class="box mb-4" style="background-color: #721410; color: white; padding: 20px; border-radius: 8px; width: 150px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center;">
+          <div style="margin-bottom: 20px;">
+            <img src="${data.Headshot}" alt="${
         data.Name
       }" class="custom-image" style="max-width: 150px; border-radius: 50%;" />
-            </div>
-            <div style="text-align: center;">
-              <p class="subtitle has-text-white" style="margin-bottom: 10px;">${
-                data.Name
-              } - ${data.Position}</p>
-              <p class="member-description has-text-white">${
-                data.Description
-              }</p>
-            </div>
-            ${
-              isAdmin
-                ? ` 
-                  <div style="display: flex; gap: 10px; margin-top: 10px;">
-                    <button class="update-button" data-id="${data.id}" style="padding: 12px 20px; font-size: 16px; width: auto; white-space: nowrap; border: none; border-radius: 4px; background-color: #4caf50; color: white; cursor: pointer; box-sizing: border-box;">
-                      Update
-                    </button>
-                    <button class="delete-button" data-id="${data.id}" style="padding: 12px 20px; font-size: 16px; width: auto; white-space: nowrap; border: none; border-radius: 4px; background-color: #f44336; color: white; cursor: pointer; box-sizing: border-box;">
-                      Delete
-                    </button>
-                  </div>
-                `
-                : ""
-            }
           </div>
+          <div style="text-align: center;">
+            <p class="subtitle has-text-white" style="margin-bottom: 10px;">${
+              data.Name
+            } - ${data.Position}</p>
+            <p class="member-description has-text-white">${data.Description}</p>
+          </div>
+          ${
+            isAdmin
+              ? ` 
+              <div style="display: flex; gap: 10px; margin-top: 10px;">
+                <button class="update-button" data-id="${data.id}" style="padding: 12px 20px; font-size: 16px; width: auto; white-space: nowrap; border: none; border-radius: 4px; background-color: #4caf50; color: white; cursor: pointer; box-sizing: border-box;">
+                  Update
+                </button>
+                <button class="delete-button" data-id="${data.id}" style="padding: 12px 20px; font-size: 16px; width: auto; white-space: nowrap; border: none; border-radius: 4px; background-color: #f44336; color: white; cursor: pointer; box-sizing: border-box;">
+                  Delete
+                </button>
+              </div>`
+              : ""
+          }
         </div>
       `;
     });
 
     // Add "Add Member" button for admins
     if (isAdmin) {
-      backing.innerHTML += `
-        <button id="add-member-button" style="display: block; margin: 20px auto; padding: 12px 20px; font-size: 16px; width: auto; white-space: nowrap; border: none; border-radius: 8px; background-color: #2196f3; color: white; cursor: pointer; box-sizing: border-box;">
+      document.querySelector("#add-member-container").innerHTML += `
+        <button id="add-member-button" style="padding: 12px 20px; font-size: 16px; width: auto; white-space: nowrap; border: none; border-radius: 8px; background-color: #2196f3; color: white; cursor: pointer; box-sizing: border-box; margin-top: 20px;">
           Add Member
         </button>
       `;
