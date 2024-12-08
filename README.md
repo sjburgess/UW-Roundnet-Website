@@ -39,27 +39,28 @@ This project is for the creation of a website for UW Roundnet, a university spor
 -----------------------------------------------
 ## Burndown Chart
 
-We experienced technical issues with our burndown chart as shown by the pictures on Day 2 and Day 5. _**This error has been discussed with Samer**_ and since he did not have a solution for us we attempted to search the internet for an answer, but did not find any. The error message eventually fixed itself by day 7. 
-
 Day 2:
 
 
+<img width="700" alt="Screenshot 2024-12-04 at 10 58 26 AM" src="https://github.com/user-attachments/assets/22d92469-7d94-46ba-93f2-409d5766e0be">
 
-<img width="1440" alt="Screenshot 2024-11-19 at 9 03 43 PM" src="https://github.com/user-attachments/assets/e433572f-8838-4791-b4b9-387238831411">
+
 
 
 
 Day 5:
 
 
-<img width="1166" alt="Screenshot 2024-11-25 at 12 11 39 PM" src="https://github.com/user-attachments/assets/c3396f90-cf0d-4d65-a061-15f9fba08252">
+<img width="694" alt="Screenshot 2024-12-06 at 9 15 46 AM" src="https://github.com/user-attachments/assets/6938e310-ff8b-4251-b47c-e5d34fd7befd">
+
 
 
 
 Day 7:
 
 
-<img width="690" alt="Screenshot 2024-11-25 at 12 10 38 PM" src="https://github.com/user-attachments/assets/df6396a8-74f2-41c1-ad97-ebcef6ffd46c">
+<img width="695" alt="Screenshot 2024-12-08 at 9 57 07 AM" src="https://github.com/user-attachments/assets/a6946efa-bb7f-4eb4-a6a7-ffea7e828a0b">
+
 
 
 
