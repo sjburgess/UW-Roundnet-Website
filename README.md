@@ -102,7 +102,7 @@ Day 7:
 
 - **Ian:**
   - *What did you do yesterday? I formatted the burndown chart for our sprint* 
-  - *What are you planning to do today? Today I am planning on creating the collections and fields for our firebase* 
+  - *What are you planning to do today? Today I am planning on hosting our files onto firebase* 
   - *Any problems? No questions or issues yet.*
 
 - **Mitchell:**
@@ -135,7 +135,7 @@ Day 7:
   - *Any problems? No problems.* 
 
 - **Ian:**
-  - *What did you do yesterday? I finished the collections and fields for submission
+  - *What did you do yesterday? I hosted our files onto firebase
   - *What are you planning to do today? Today I will add the burndown screenshots to the github page*
   - *Any problems? No issues.*
 
