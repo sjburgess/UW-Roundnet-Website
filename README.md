@@ -91,8 +91,8 @@ Day 7:
   - *Any problems?* No issues so far! 
 
 - **Sarah:**
-  - *What did you do yesterday?*   Yesterday I worked with my team to figure out what to finalize for our project.
-  - *What are you planning to do today?*  Today I did some javascript and firebase updates to make sure everything was working.
+  - *What did you do yesterday?*   Yesterday I reviewed class notes on testing.
+  - *What are you planning to do today?*  Today I created a testing.js file to do tests on the interest form.
   - *Any problems? No problems
 
 - **Basil:**
@@ -125,8 +125,8 @@ Day 7:
   - *Any problems?* no issues! 
 
 - **Sarah:**
-    - *What did you do yesterday?*  Yesterday, I updated the interest forms formatting to make it look more visually appealing.
-     - *What are you planning to do today?*    Today I am planning on checking over our html and ensuring everything is all set for submission.
+    - *What did you do yesterday?*  Yesterday, I updated the testing.js page and double checked it was working properly.
+     - *What are you planning to do today?*    Today I am planning on adding testing for the Create Account button on the testing.js page.
      - *Any problems?* No problems
 
 - **Basil:**
