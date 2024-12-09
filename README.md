@@ -96,8 +96,8 @@ Day 7:
   - *Any problems? No problems
 
 - **Basil:**
-  - *What did you do yesterday? I used JS to update the user status page to show all users and their admin status. I began working on admin functionality for this page as well.* 
-  - *What are you planning to do today? I plan to complete writing the code for the admin functionality of the user status page.* 
+  - *What did you do yesterday? I updated the formatting of sign in, sign up, and sign out buttons to ensure clarity of function and graphic appeal.* 
+  - *What are you planning to do today? I plan to begin assessing the security rules in firebase, and potentially deploy new rules if the web app is activated.* 
   - *Any problems? No problems* 
 
 - **Ian:**
@@ -130,8 +130,8 @@ Day 7:
      - *Any problems?* No problems
 
 - **Basil:**
-  - *What did you do yesterday? I began adding admin functionality to ensure only admins could view and edit the member submissions and user status pages.* 
-  - *What are you planning to do today? I plan to finish coding the admin viewer allowance and make minor formatting adjustments for usability.* 
+  - *What did you do yesterday? I began troubleshooting the security rules to ensure admin access and normal user access is consistent with our site design.* 
+  - *What are you planning to do today? I plan to finish writing security rules.* 
   - *Any problems? No problems.* 
 
 - **Ian:**
