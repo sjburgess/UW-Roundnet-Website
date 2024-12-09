@@ -106,8 +106,8 @@ Day 7:
   - *Any problems? No questions or issues yet.*
 
 - **Mitchell:**
-  - *What did you do yesterday? I made the member submissions page display the user's in a more uniform format. I also linked the board members page with the databaes.
-  - *What are you planning to do today? I am planning on creating update and delete functions for the member submissions page.
+  - *What did you do yesterday? I made the board members page pull data from firebase and made added buttons that display when you are logged in as an admin.
+  - *What are you planning to do today? I am planning on creating update and delete functions for the board members page.
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
@@ -140,8 +140,8 @@ Day 7:
   - *Any problems? No issues.*
 
 - **Mitchell:**
-  - *What did you do yesterday? I added update and delete functionality for the member submissions page.
-  - *What are you planning to do today? I am planning on making sure the members submissions page will work under any circumstance.
+  - *What did you do yesterday? I added update and delete functionality for the board members page.
+  - *What are you planning to do today? I will do any last minute updates to the functionality or interface of the website.
   - *Any problems? No issues so far.
 
 - **Lucas:**
