@@ -111,8 +111,8 @@ Day 7:
   - *Any problems? I have had no issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* Also started brainstorming board member update functionality from within the webpage.    
-  - *What are you planning to do today?* Try implementing update/delete buttons. 
+  - *What did you do yesterday?* Worked on board members page display. 
+  - *What are you planning to do today?* Add update and delete functionality for board members page.  
   - *Any problems?* No issues.
 
 ---
@@ -145,7 +145,7 @@ Day 7:
   - *Any problems? No issues so far.
 
 - **Lucas:**
-  - *What did you do yesterday?* Met with Mitchell to review update and delete functionality.  
+  - *What did you do yesterday?* Added update and delete functionality to board members page.   
   - *What are you planning to do today?* Review milestone deliverable. 
   - *Any problems?* No problems. 
 
