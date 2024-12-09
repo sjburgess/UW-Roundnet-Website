@@ -375,17 +375,17 @@ document.querySelector("#about").addEventListener("click", (event) => {
           "
         >
           <img
-            src="https://github.com/sjburgess/UW-Roundnet-Website/blob/main/aboutmephotos/aboutmephoto3.jpg?raw=true"
+            src="aboutmephoto3.jpg"
             alt="Image Description 3"
             style="width: 30%; margin: 0 2rem; border-radius: 8px"
           />
           <img
-            src="https://github.com/sjburgess/UW-Roundnet-Website/blob/main/aboutmephotos/aboutmephoto1.jpg?raw=true"
+            src="aboutmephoto2.jpg"
             alt="Image Description 2"
             style="width: 30%; margin: 0 2rem; border-radius: 8px"
           />
           <img
-            src="https://github.com/sjburgess/UW-Roundnet-Website/blob/main/aboutmephotos/aboutmephoto2.jpg?raw=true"
+            src="aboutmephoto1.jpg"
             alt="Image Description 1"
             style="width: 30%; margin: 0 2rem; border-radius: 8px"
           />
@@ -419,7 +419,7 @@ document.querySelector("#about").addEventListener("click", (event) => {
       <figure style="display: flex; justify-content: center">
         <img
           class="logo"
-          src="https://github.com/sjburgess/UW-Roundnet-Website/blob/main/Screenshot%202024-10-02%20at%208.08.03%E2%80%AFPM.png?raw=true"
+          src="Screenshot 2024-10-02 at 8.08.03 PM.png"
           alt="Roundnet Club Logo"
         />
       </figure>
