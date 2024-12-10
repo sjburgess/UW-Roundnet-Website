@@ -16,8 +16,8 @@ async function go() {
   await new Promise((r) => setTimeout(r, 1000));
 
   // input selections
-  await page.type("#name", "test_name");
-  await page.type("#emaill", "test_email");
+  await page.type("#name", "t_name");
+  await page.type("#emaill", "t_email");
   await page.select("#year", "Senior");
 
   await page.click(
@@ -34,7 +34,7 @@ async function go() {
   await new Promise((r) => setTimeout(r, 1000));
 
   await page.click("#signupbtn");
-  await page.type("#email", "test@test.com");
+  await page.type("#email", "abc@1234.com");
   await page.type("#password", "password");
   await page.click("#signup_form > div:nth-child(3) > div > button");
 }
